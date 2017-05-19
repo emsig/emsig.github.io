@@ -1,10 +1,12 @@
+**Under construction**
+
 ## Installation & requirements
 
 The easiest way to install the latest stable version of `empymod` is via
 `conda`:
 
 ```bash
-conda install -c empymod
+conda install -c prisae empymod
 ```
 
 or via `pip`:
