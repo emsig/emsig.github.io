@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
 title: [empymod]
 description: [An open-source full 3D electromagnetic modeller for 1D VTI media in Python]
-show_downloads: ["false"]
+gems:
+  - jekyll-last-modified-at
