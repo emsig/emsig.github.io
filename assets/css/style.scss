@@ -3,8 +3,13 @@
 
 @import "{{ site.theme }}";
 
-.page-header{
+.page-header {
     color: #606c71;
     background-color: #dddddd;
     background-image: none;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 400pt;
 }
