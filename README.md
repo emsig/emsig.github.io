@@ -32,8 +32,9 @@ your memory usage going through the roof.
 
 If you are new to Python I recommend using a Python distribution, which will
 ensure that all dependencies are met, specifically properly compiled versions
-of `NumPy` and `SciPy`; I recommend using Anaconda (version 3.x;
-[continuum.io/downloads](https://www.continuum.io/downloads)).  If you
+of `NumPy` and `SciPy`; I recommend using
+[Anaconda](https://www.continuum.io/downloads).
+If you
 install Anaconda you can simply start the *Anaconda Navigator*, add the channel
 `prisae` and `empymod` will appear in the package list and can be installed
 with a click.
@@ -53,13 +54,47 @@ Lots of examples can be found in the [notebooks repository](https://github.com/e
 
 ## Code
 
-## Features
+If you want to dig deeper you can find all the sources on the [project page](https://github.com/empymod).
 
 ## Contributing
+Please get in touch if you would like to contribute some additional code or additional examples if its usage,
+encountered a bug, or generally have a question regarding empymod. Just make a pull-request or open an issue
+on GitHub.
 
+## Features
+- Hankel transforms
+  - QUAD (adaptive quadrature)
+  - FHT (Fast Hankel transform)
+  - QWE (Quadrature with extrapolation)
+- Fourier transforms
+  - Sine/Cosine-transforms
+  - QWE (Quadrature with extrapolation)
+  - FFT (Fast Fourier Transform)
+  - FFTLog (Logarithmic Fast Fourier Transform)
+- Analytical solutions
+ 
 ## Citation
 
-## License
+I am in the process of publishing an article in Geophysics regarding empymod,
+and I will put the info here once it is a reality. If you publish results for
+which you used empymod, please consider citing this article. Meanwhile, you
+could cite the Geophysical Tutorial:
 
+    Werthmüller, D., 2017, Getting started with controlled-source electromagnetic
+    1D modeling: The Leading Edge, 36, 352-355; doi: 10.1190/tle36040352.1.
+
+Also consider citing the two articles given below, Hunziker et al. (2015),
+and Key (2012), without which empymod would not exist:
+
+    Hunziker, J., J. Thorbecke, and E. Slob, 2015, The electromagnetic response
+    in a layered vertical transverse isotropic medium: A new look at an old problem:
+    Geophysics, 80, F1-F18; DOI: 10.1190/geo2013-0411.1.
+    
+    Key, K., 2012, Is the fast Hankel transform faster than quadrature?:
+    Geophysics, 77, F21-F30; DOI: 10.1190/GEO2011-0237.1.
+
+
+## License
+Licensed under the Apache License, Version 2.0.
 
 
