@@ -4,13 +4,18 @@
 @import "{{ site.theme }}";
 
 .page-header {
-    color: #606c71;
-    background-color: #dddddd;
-    background-image: none;
+  color: #606c71;
+  background-color: #dddddd;
+  background-image: none;
 }
 
 .logo-img {
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  max-width: 600px;
+}
+
+.logo-img img {
+  width: 100%;
 }
