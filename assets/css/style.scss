@@ -1,10 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+$page-header-color: auto;
+$page-header-background-image: none;
 
-.page-header{
-    color: auto;
-    background-color: #ccc;
-    background-image: none;
-}
+@import "{{ site.theme }}";
