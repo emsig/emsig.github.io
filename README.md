@@ -66,7 +66,7 @@ Please get in touch if you would like to contribute some additional code to
 empymod or additional examples of its usage, encountered a bug, or simply have
 a question regarding its usage. Just make a pull-request or open an issue on
 GitHub. Have a look at the
-[Missing Features](https://github.com/empymod/empymod#missingfeatures)-list
+[Roadmap](https://github.com/empymod/empymod#roadmap)
 if you need an idea on what to work.
 
 ## Features
@@ -114,17 +114,23 @@ which you used empymod, please consider citing this article. Meanwhile, you
 could cite the Geophysical Tutorial:
 
 > Werthmüller, D., 2017, Getting started with controlled-source electromagnetic
-> 1D modeling: The Leading Edge, 36, 352-355; DOI: 10.1190/tle36040352.1.
+> 1D modeling: The Leading Edge, 36, 352-355; DOI:
+> [10.1190/tle36040352.1](http://dx.doi.org/10.1190/tle36040352.1).
 
 Also consider citing the two articles given below, Hunziker et al. (2015)
 and Key (2012), without which empymod would not exist:
 
-> Hunziker, J., J. Thorbecke, and E. Slob, 2015, The electromagnetic response
-> in a layered vertical transverse isotropic medium: A new look at an old
-> problem: Geophysics, 80, F1-F18; DOI: 10.1190/geo2013-0411.1.
+> Hunziker, J., J. Thorbecke, and E. Slob, 2015, The electromagnetic response in
+> a layered vertical transverse isotropic medium: A new look at an old problem:
+> Geophysics, 80, F1-F18; DOI: 10.1190/geo2013-0411.1. DOI:
+> [10.1190/10.1190/geo2013-0411.1](http://dx.doi.org/10.1190/geo2013-0411.1).
 
 > Key, K., 2012, Is the fast Hankel transform faster than quadrature?:
-> Geophysics, 77, F21-F30; DOI: 10.1190/GEO2011-0237.1.
+> Geophysics, 77, F21-F30; DOI: 10.1190/GEO2011-0237.1. DOI:
+> [10.1190/10.1190/GEO2011-0237.1](http://dx.doi.org/10.1190/GEO2011-0237.1).
+
+All releases have additionally a Zenodo-DOI, provided on the 
+[release-page](https://github.com/empymod/empymod/releases).
 
 
 ## Contact
