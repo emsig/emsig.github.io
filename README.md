@@ -2,11 +2,12 @@
 
 The electromagnetic modeller **empymod** can model electric or magnetic
 responses due to a three-dimensional electric or magnetic source in a
-layered-earth model with vertical transverse isotropy, electric permittivity,
-and magnetic permeability, from very low frequencies (DC) to very high
-frequencies (GPR). The calculation is carried out in the wavenumber-frequency
-domain, and various Hankel- and Fourier-transform methods are included to
-transform the responses into the space-frequency and space-time domains.
+layered-earth model with vertical transverse isotropic (VTI) resistivity, VTI
+electric permittivity, and VTI magnetic permeability, from very low frequencies
+(DC) to very high frequencies (GPR). The calculation is carried out in the
+wavenumber-frequency domain, and various Hankel- and Fourier-transform methods
+are included to transform the responses into the space-frequency and space-time
+domains.
 
 
 ## Installation & requirements
@@ -23,7 +24,7 @@ or via `pip`:
 pip install empymod
 ```
 
-Required are python version 3.4 or higher and the modules `NumPy` and `SciPy`.
+Required are Python version 3.4 or higher and the modules `NumPy` and `SciPy`.
 If you want to run parts of the kernel in parallel, the module `numexpr` is
 required additionally.
 
@@ -64,7 +65,9 @@ notebooks, and the published articles on the
 Please get in touch if you would like to contribute some additional code to
 empymod or additional examples of its usage, encountered a bug, or simply have
 a question regarding its usage. Just make a pull-request or open an issue on
-GitHub.
+GitHub. Have a look at the
+[Missing Features](https://github.com/empymod/empymod#missingfeatures)-list
+if you need an idea on what to work.
 
 ## Features
 - Calculates the complete (diffusion and wave phenomena) 3D electromagnetic
@@ -89,7 +92,7 @@ GitHub.
   - Diffusive halfspace (el. src/rec); space-frequency and space-time domains
     - Direct wave (= diffusive fullspace solution)
     - Reflected wave
-    - Airwave (semi-analytical in the case of step-responses)
+    - Airwave (semi-analytical in the case of step responses)
 - Modelling routines:
   - `bipole`: arbitrary oriented, finite length bipoles with given source
     strength; space-frequency and space-time domains.
@@ -123,6 +126,14 @@ and Key (2012), without which empymod would not exist:
 > Key, K., 2012, Is the fast Hankel transform faster than quadrature?:
 > Geophysics, 77, F21-F30; DOI: 10.1190/GEO2011-0237.1.
 
+
+## Contact
+
+Please use the possibilities provided by GitHub to get in touch
+([opening issues](https://github.com/empymod/empymod/issues),
+[pull requests](https://github.com/empymod/empymod/pulls)). Use the
+[contact form](https://werthmuller.org/contact) on my personal website if you
+would like to write me outside of GitHub.
 
 ## License
 Licensed under the Apache License, Version 2.0.
