@@ -68,25 +68,19 @@ GitHub.
 
 ## Features
 - Calculates the full (diffusion and wave phenomena) 3D electromagnetic field
-  in a layered-earth model:
-  - Wavenumber-frequency domain
-  - Space-frequency domain
-  - Space-time domain
-  - Electric and magnetic sources
-  - Electric and magnetic receivers
-  - Vertical transverse isotropic resistivity
-  - Vertical transverse electric permittivity
-  - Vertical transverse magnetic permeability
-- Hankel transforms
+  in a layered-earth model including vertical transverse isotropic (VTI)
+  resistivity, VTI electric permittivity, and VTI magnetic permeability, for
+  electric and magnetic sources as well as electric and magnetic receivers.
+- Hankel transforms (wavenumber-frequency to space-frequency transform)
   - Adaptive quadrature
   - Fast Hankel transform
-    (Includes 9 different filters between 51 and 801 points; own ones can be
-    used)
+    (includes 9 different filters between 51 and 801 points; own ones can be
+    provided)
   - Quadrature with extrapolation
-- Fourier transforms
+- Fourier transforms (space-frequency to space-time transform)
   - Sine/Cosine-transforms
-    (Includes 9 different filters between 81 and 241 points; own ones can be
-    used)
+    (includes 5 different filters between 81 and 241 points; own ones can be
+    provided)
   - Quadrature with extrapolation
   - Fast Fourier Transform
   - Logarithmic Fast Fourier Transform
@@ -97,15 +91,15 @@ GitHub.
     - Reflected wave
     - Airwave (semi-analytical in the case of step-responses)
 - Modelling routines:
-  - Bipole: arbitrary oriented, finite length bipoles with given source
+  - `bipole`: arbitrary oriented, finite length bipoles with given source
     strength, space-frequency and space-time domains.
-  - Dipole: infinitesimal small dipoles oriented along the principal axis,
+  - `dipole`: infinitesimal small dipoles oriented along the principal axes,
     normalized field, space-frequency and space-time domains.
-  - Wavenumber: as previous routine, but returns the wavenumber-frequency
+  - `wavenumber`: as `dipole`, but returns the wavenumber-frequency domain
     response.
-  - GPR: Model the ground-penetrating radar response for given central
+  - `gpr`: Model the ground-penetrating radar response for given central
     frequency, using a Ricker wavelet (experimental).
-  - Analytical: interface to the analytical, space-frequency and space-time
+  - `analytical`: interface to the analytical, space-frequency and space-time
     domain solutions.
 
 
@@ -119,7 +113,7 @@ could cite the Geophysical Tutorial:
 > Werthmüller, D., 2017, Getting started with controlled-source electromagnetic
 > 1D modeling: The Leading Edge, 36, 352-355; DOI: 10.1190/tle36040352.1.
 
-Also consider citing the two articles given below, Hunziker et al. (2015),
+Also consider citing the two articles given below, Hunziker et al. (2015)
 and Key (2012), without which empymod would not exist:
 
 > Hunziker, J., J. Thorbecke, and E. Slob, 2015, The electromagnetic response
