@@ -27,15 +27,15 @@ Required are python version 3.4 or higher and the modules `NumPy` and `SciPy`.
 If you want to run parts of the kernel in parallel, the module `numexpr` is
 required additionally.
 
-**Note**: Do not use `scipy == 0.19.0`. It has a memory leak in `quad`, see
-[github.com/scipy/scipy/pull/7216](https://github.com/scipy/scipy/pull/7216).
-So if you use QUAD (or potentially QWE) in any of your transforms you might see
-your memory usage going through the roof.
+**Note**: Do not use `scipy == 0.19.0`. It has a memory leak in `quad`
+([source](https://github.com/scipy/scipy/pull/7216)). So if you use QUAD (or
+potentially QWE) in any of your transforms you might see your memory usage
+going through the roof.
 
 If you are new to Python I recommend using a Python distribution, which will
 ensure that all dependencies are met, specifically properly compiled versions
 of `NumPy` and `SciPy`; I recommend using
-[Anaconda](https://www.continuum.io/downloads).  If you install Anaconda you
+[Anaconda](https://www.continuum.io/downloads). If you install Anaconda you
 can simply start the *Anaconda Navigator*, add the channel `prisae` and
 `empymod` will appear in the package list and can be installed with a click.
 
@@ -56,8 +56,8 @@ Lots of examples can be found in the
 
 ## Code
 
-If you want to dig deeper you can find the source of empymod, the accompanying
-notebooks and the published articles on the
+If you want to dig deeper you can find the source of empymod, its accompanying
+notebooks, and the published articles on the
 [empymod project page](https://github.com/empymod).
 
 ## Contributing
@@ -67,16 +67,47 @@ a question regarding its usage. Just make a pull-request or open an issue on
 GitHub.
 
 ## Features
+- Calculates the full (diffusion and wave phenomena) 3D electromagnetic field
+  in a layered-earth model:
+  - Wavenumber-frequency domain
+  - Space-frequency domain
+  - Space-time domain
+  - Electric and magnetic sources
+  - Electric and magnetic receivers
+  - Vertical transverse isotropic resistivity
+  - Vertical transverse electric permittivity
+  - Vertical transverse magnetic permeability
 - Hankel transforms
-  - QUAD (adaptive quadrature)
-  - FHT (Fast Hankel transform)
-  - QWE (Quadrature with extrapolation)
+  - Adaptive quadrature
+  - Fast Hankel transform
+    (Includes 9 different filters between 51 and 801 points; own ones can be
+    used)
+  - Quadrature with extrapolation
 - Fourier transforms
   - Sine/Cosine-transforms
-  - QWE (Quadrature with extrapolation)
-  - FFT (Fast Fourier Transform)
-  - FFTLog (Logarithmic Fast Fourier Transform)
-- Analytical solutions
+    (Includes 9 different filters between 81 and 241 points; own ones can be
+    used)
+  - Quadrature with extrapolation
+  - Fast Fourier Transform
+  - Logarithmic Fast Fourier Transform
+- Analytical, space-frequency and space-time domain solutions
+  - Full fullspace (el./mag. src/rec); space-frequency domain
+  - Diffusive halfspace (el. src/rec); space-frequency and space-time domains
+    - Direct wave (= diffusive fullspace solution)
+    - Reflected wave
+    - Airwave (semi-analytical in the case of step-responses)
+- Modelling routines:
+  - Bipole: arbitrary oriented, finite length bipoles with given source
+    strength, space-frequency and space-time domains.
+  - Dipole: infinitesimal small dipoles oriented along the principal axis,
+    normalized field, space-frequency and space-time domains.
+  - Wavenumber: as previous routine, but returns the wavenumber-frequency
+    response.
+  - GPR: Model the ground-penetrating radar response for given central
+    frequency, using a Ricker wavelet (experimental).
+  - Analytical: interface to the analytical, space-frequency and space-time
+    domain solutions.
+
 
 ## Citation
 
