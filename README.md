@@ -67,8 +67,8 @@ a question regarding its usage. Just make a pull-request or open an issue on
 GitHub.
 
 ## Features
-- Calculates the full (diffusion and wave phenomena) 3D electromagnetic field
-  in a layered-earth model including vertical transverse isotropic (VTI)
+- Calculates the complete (diffusion and wave phenomena) 3D electromagnetic
+  field in a layered-earth model including vertical transverse isotropic (VTI)
   resistivity, VTI electric permittivity, and VTI magnetic permeability, for
   electric and magnetic sources as well as electric and magnetic receivers.
 - Hankel transforms (wavenumber-frequency to space-frequency transform)
@@ -85,19 +85,19 @@ GitHub.
   - Fast Fourier Transform
   - Logarithmic Fast Fourier Transform
 - Analytical, space-frequency and space-time domain solutions
-  - Full fullspace (el./mag. src/rec); space-frequency domain
+  - Complete fullspace (el./mag. src/rec); space-frequency domain
   - Diffusive halfspace (el. src/rec); space-frequency and space-time domains
     - Direct wave (= diffusive fullspace solution)
     - Reflected wave
     - Airwave (semi-analytical in the case of step-responses)
 - Modelling routines:
   - `bipole`: arbitrary oriented, finite length bipoles with given source
-    strength, space-frequency and space-time domains.
+    strength; space-frequency and space-time domains.
   - `dipole`: infinitesimal small dipoles oriented along the principal axes,
-    normalized field, space-frequency and space-time domains.
+    normalized field; space-frequency and space-time domains.
   - `wavenumber`: as `dipole`, but returns the wavenumber-frequency domain
     response.
-  - `gpr`: Model the ground-penetrating radar response for given central
+  - `gpr`: calculates the ground-penetrating radar response for given central
     frequency, using a Ricker wavelet (experimental).
   - `analytical`: interface to the analytical, space-frequency and space-time
     domain solutions.
