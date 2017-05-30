@@ -10,9 +10,9 @@ are included to transform the responses into the space-frequency and space-time
 domains.
 
 
-## Installation & requirements
+## Installation & requirements [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 
-You can install empymod either via `conda`:
+You can install empymod either via `conda`: 
 
 ```bash
 conda install -c prisae empymod
@@ -40,7 +40,7 @@ of `NumPy` and `SciPy`; I recommend using
 can simply start the *Anaconda Navigator*, add the channel `prisae` and
 `empymod` will appear in the package list and can be installed with a click.
 
-## Documentation
+## Documentation [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
 
 The manual of `empymod` can be found at
 [empymod.readthedocs.io](http://empymod.readthedocs.io/en/stable).
