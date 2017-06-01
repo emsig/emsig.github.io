@@ -49,7 +49,7 @@ The manual of `empymod` can be found at
 
 A good way to get started is by following the [*Geophysical
 Tutorial*](http://library.seg.org/doi/pdf/10.1190/tle36040352.1) from the April
-2017 issue of the *The Leading Edge*
+2017 issue of *The Leading Edge*
 ([source](https://github.com/empymod/article-tle2017)).
 
 Lots of examples can be found in the
