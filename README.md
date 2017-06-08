@@ -12,7 +12,7 @@ domains.
 
 ## Installation & requirements [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 
-You can install empymod either via `conda`: 
+You can install empymod either via `conda`:
 
 ```bash
 conda install -c prisae empymod
@@ -40,10 +40,12 @@ of `NumPy` and `SciPy`; I recommend using
 can simply start the *Anaconda Navigator*, add the channel `prisae` and
 `empymod` will appear in the package list and can be installed with a click.
 
+
 ## Documentation [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
 
 The manual of `empymod` can be found at
 [empymod.readthedocs.io](http://empymod.readthedocs.io/en/stable).
+
 
 ## Examples
 
@@ -55,25 +57,23 @@ Tutorial*](http://library.seg.org/doi/pdf/10.1190/tle36040352.1) from the April
 Lots of examples can be found in the
 [notebook repository](https://github.com/empymod/example-notebooks).
 
-## Code
-
-If you want to dig deeper you can find the source of empymod, its accompanying
-notebooks, and the published articles on the
-[empymod project page](https://github.com/empymod).
-
-## Contributing
-Please get in touch if you would like to contribute some additional code to
-empymod or additional examples of its usage, encountered a bug, or simply have
-a question regarding its usage. Just make a pull-request or open an issue on
-GitHub. Have a look at the
-[Roadmap](https://github.com/empymod/empymod#roadmap)
-if you need an idea on what to work.
 
 ## Features
 - Calculates the complete (diffusion and wave phenomena) 3D electromagnetic
   field in a layered-earth model including vertical transverse isotropic (VTI)
   resistivity, VTI electric permittivity, and VTI magnetic permeability, for
   electric and magnetic sources as well as electric and magnetic receivers.
+- Modelling routines:
+  - `bipole`: arbitrary oriented, finite length bipoles with given source
+    strength; space-frequency and space-time domains.
+  - `dipole`: infinitesimal small dipoles oriented along the principal axes,
+    normalized field; space-frequency and space-time domains.
+  - `wavenumber`: as `dipole`, but returns the wavenumber-frequency domain
+    response.
+  - `gpr`: calculates the ground-penetrating radar response for given central
+    frequency, using a Ricker wavelet (experimental).
+  - `analytical`: interface to the analytical, space-frequency and space-time
+    domain solutions.
 - Hankel transforms (wavenumber-frequency to space-frequency transform)
   - Adaptive quadrature
   - Fast Hankel transform
@@ -88,22 +88,29 @@ if you need an idea on what to work.
   - Fast Fourier Transform
   - Logarithmic Fast Fourier Transform
 - Analytical, space-frequency and space-time domain solutions
-  - Complete fullspace (el./mag. src/rec); space-frequency domain
-  - Diffusive halfspace (el. src/rec); space-frequency and space-time domains
-    - Direct wave (= diffusive fullspace solution)
+  - Complete full-space (electric and magnetic sources and receivers);
+    space-frequency domain
+  - Diffusive half-space (electric sources and receivers); space-frequency and
+    space-time domains
+    - Direct wave (= diffusive full-space solution)
     - Reflected wave
     - Airwave (semi-analytical in the case of step responses)
-- Modelling routines:
-  - `bipole`: arbitrary oriented, finite length bipoles with given source
-    strength; space-frequency and space-time domains.
-  - `dipole`: infinitesimal small dipoles oriented along the principal axes,
-    normalized field; space-frequency and space-time domains.
-  - `wavenumber`: as `dipole`, but returns the wavenumber-frequency domain
-    response.
-  - `gpr`: calculates the ground-penetrating radar response for given central
-    frequency, using a Ricker wavelet (experimental).
-  - `analytical`: interface to the analytical, space-frequency and space-time
-    domain solutions.
+
+
+## Code
+
+If you want to dig deeper you can find the source of empymod, its accompanying
+notebooks, and the published articles on the
+[empymod project page](https://github.com/empymod).
+
+
+## Contributing
+Please get in touch if you would like to contribute some additional code to
+empymod or additional examples of its usage, encountered a bug, or simply have
+a question regarding its usage. Just make a pull-request or open an issue on
+GitHub. Have a look at the
+[Roadmap](https://github.com/empymod/empymod#roadmap)
+if you need an idea on what to work.
 
 
 ## Citation
@@ -117,19 +124,19 @@ could cite the Geophysical Tutorial:
 > 1D modeling: The Leading Edge, 36, 352-355; DOI:
 > [10.1190/tle36040352.1](http://dx.doi.org/10.1190/tle36040352.1).
 
-Also consider citing the two articles given below, Hunziker et al. (2015)
-and Key (2012), without which empymod would not exist:
+Also consider citing Hunziker et al. (2015) and Key (2012), without which
+empymod would not exist:
 
 > Hunziker, J., J. Thorbecke, and E. Slob, 2015, The electromagnetic response in
 > a layered vertical transverse isotropic medium: A new look at an old problem:
 > Geophysics, 80, F1-F18; DOI:
-> [10.1190/geo2013-0411.1](http://dx.doi.org/10.1190/geo2013-0411.1).
-
+> [10.1190/geo2013-0411.1](http://dx.doi.org/10.1190/geo2013-0411.1).  
+>  
 > Key, K., 2012, Is the fast Hankel transform faster than quadrature?:
 > Geophysics, 77, F21-F30; DOI:
 > [10.1190/GEO2011-0237.1](http://dx.doi.org/10.1190/GEO2011-0237.1).
 
-All releases have additionally a Zenodo-DOI, provided on the 
+All releases have a Zenodo-DOI, provided on the
 [release-page](https://github.com/empymod/empymod/releases).
 
 
@@ -141,13 +148,16 @@ Please use the possibilities provided by GitHub to get in touch
 [contact form](https://werthmuller.org/contact) on my personal website if you
 would like to write me outside of GitHub.
 
+
 ## Notice
 
 This product includes software that was initially (till 01/2017) developed at
 *The Mexican Institute of Petroleum IMP*
 ([Instituto Mexicano del Petróleo](http://www.gob.mx/imp)). The project was
 funded through *The Mexican National Council of Science and Technology*
-([Consejo Nacional de Ciencia y Tecnología](http://www.conacyt.mx)).
+([Consejo Nacional de Ciencia y Tecnología](http://www.conacyt.mx)). Since
+02/2017 it is a personal effort, and new contributors are welcome!
+
 
 ## License
 
