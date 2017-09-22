@@ -26,7 +26,8 @@ pip install empymod
 
 Required are Python version 3.4 or higher and the modules `NumPy` and `SciPy`.
 If you want to run parts of the kernel in parallel, the module `numexpr` is
-required additionally.
+required additionally. To also install the **add-ons** just run the above
+command again, this time with `empyscripts` instead of `empymod`.
 
 **Note**: Do not use `scipy == 0.19.0`. It has a memory leak in `quad`
 ([source](https://github.com/scipy/scipy/pull/7216)). So if you use QUAD (or
