@@ -97,11 +97,20 @@ Lots of examples can be found in the
     - Reflected wave
     - Airwave (semi-analytical in the case of step responses)
 
+## Add-ons
+
+The add-ons for empymod provide some very specific, useful functionalities. At
+the moment there are two add-ons:
+  - `tmtemod`: Return up- and down-going TM/TE-mode contributions for
+    x-directed electric sources and receivers, which are located in the same
+    layer.
+  - `fdesign`: Design digital linear filters for the Hankel and Fourier
+  transforms. (Will be released early 2018.)
 
 ## Code
 
-If you want to dig deeper you can find the source of empymod, its accompanying
-notebooks, and the published articles on the
+If you want to dig deeper you can find the source of empymod, its add-ons, its
+accompanying notebooks, and the published articles on the
 [empymod project page](https://github.com/empymod).
 
 
