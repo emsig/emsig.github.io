@@ -105,7 +105,7 @@ the moment there are two add-ons:
     x-directed electric sources and receivers, which are located in the same
     layer.
   - `fdesign`: Design digital linear filters for the Hankel and Fourier
-  transforms. (Will be released early 2018.)
+  transforms.
 
 ## Code
 
