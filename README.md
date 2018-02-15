@@ -1,5 +1,3 @@
-## About
-
 The electromagnetic modeller **empymod** can model electric or magnetic
 responses due to a three-dimensional electric or magnetic source in a
 layered-earth model with vertical transverse isotropic (VTI) resistivity, VTI
@@ -55,6 +53,7 @@ from the April 2017 issue of *The Leading Edge*
 
 ## Features
 
+### empymod
 - Calculates the complete (diffusion and wave phenomena) 3D electromagnetic
   field in a layered-earth model including vertical transverse isotropic (VTI)
   resistivity, VTI electric permittivity, and VTI magnetic permeability, for
@@ -92,9 +91,7 @@ from the April 2017 issue of *The Leading Edge*
     - Reflected wave
     - Airwave (semi-analytical in the case of step responses)
 
-
-## Add-ons
-
+### empyscripts (add-ons)
 The add-ons for empymod provide some very specific, additional functionalities:
   - `tmtemod`: Return up- and down-going TM/TE-mode contributions for
     x-directed electric sources and receivers, which are located in the same
@@ -105,20 +102,9 @@ The add-ons for empymod provide some very specific, additional functionalities:
 
 ## Contributing
 
-If you want to dig deeper you can find the source of empymod, its add-ons, its
-accompanying notebooks, and the published articles on the
-[empymod GitHub page](https://github.com/empymod).
-Please get in touch if you would like to contribute some additional code to
-empymod or additional examples of its usage, encountered a bug, or simply have
-a question regarding its usage. Just make a
-[pull requests](https://github.com/empymod/empymod/pulls) or open an
-[issue](https://github.com/empymod/empymod/issues) on
-GitHub. You can also use the
-[contact form](https://werthmuller.org/contact) on my personal website if you
-would like to write me outside of GitHub.
-Have a look at the
-[Roadmap](https://github.com/empymod/empymod#roadmap)
-if you need an idea on what to work.
+Head over to the [empymod GitHub page](https://github.com/empymod) if you would
+like to contribute or file a bug. More information in this regard can also be
+found in the documentation.
 
 
 ## Citation
