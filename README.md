@@ -53,7 +53,7 @@ from the April 2017 issue of *The Leading Edge*
 
 ## Features
 
-### empymod
+**empymod**
 - Calculates the complete (diffusion and wave phenomena) 3D electromagnetic
   field in a layered-earth model including vertical transverse isotropic (VTI)
   resistivity, VTI electric permittivity, and VTI magnetic permeability, for
@@ -91,7 +91,7 @@ from the April 2017 issue of *The Leading Edge*
     - Reflected wave
     - Airwave (semi-analytical in the case of step responses)
 
-### empyscripts (add-ons)
+**empyscripts (add-ons)**  
 The add-ons for empymod provide some very specific, additional functionalities:
   - `tmtemod`: Return up- and down-going TM/TE-mode contributions for
     x-directed electric sources and receivers, which are located in the same
