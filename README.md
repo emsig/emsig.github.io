@@ -7,7 +7,7 @@ wavenumber-frequency domain, and various Hankel- and Fourier-transform methods
 are included to transform the responses into the space-frequency and space-time
 domains.
 
-[[Installation & requirements](#installation--requirements---)] [[Documentation](#documentation-)] [[Examples](#examples)] [[Features](#features)] [[Contributing](#contributing)] [[Citation](#citation)] [[License](#license)]
+[[Installation](#installation--requirements---)] [[Documentation](#documentation-)] [[Examples](#examples)] [[Features](#features)] [[Contributing](#contributing)] [[Citation](#citation)] [[License](#license)]
 
 ## Installation & requirements [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 
