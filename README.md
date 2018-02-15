@@ -25,21 +25,16 @@ pip install empymod
 ```
 
 Required are Python version 3.4 or higher and the modules `NumPy` and `SciPy`.
-If you want to run parts of the kernel in parallel, the module `numexpr` is
-required additionally. To also install the **add-ons** just run the above
-command again, this time with `empyscripts` instead of `empymod`.
-
-**Note**: Do not use `scipy == 0.19.0`. It has a memory leak in `quad`
-([source](https://github.com/scipy/scipy/pull/7216)). So if you use QUAD (or
-potentially QWE) in any of your transforms you might see your memory usage
-going through the roof.
+For the **add-ons** (`empyscripts`) just run the above command again, this
+time with `empyscripts` instead of `empymod`.
 
 If you are new to Python I recommend using a Python distribution, which will
 ensure that all dependencies are met, specifically properly compiled versions
 of `NumPy` and `SciPy`; I recommend using
 [Anaconda](https://www.anaconda.com/download). If you install Anaconda you
-can simply start the *Anaconda Navigator*, add the channel `prisae` and
-`empymod` will appear in the package list and can be installed with a click.
+can simply start the *Anaconda Navigator*, add the channel `prisae` and both
+`empymod` and `empyscripts` will appear in the package list and can be
+installed with a click.
 
 
 ## Documentation [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
@@ -50,16 +45,16 @@ The manual of `empymod` can be found at
 
 ## Examples
 
-A good way to get started is by following the [*Geophysical
-Tutorial*](http://library.seg.org/doi/pdf/10.1190/tle36040352.1) from the April
-2017 issue of *The Leading Edge*
-([source](https://github.com/empymod/article-tle2017)).
-
 Lots of examples can be found in the
-[notebook repository](https://github.com/empymod/example-notebooks).
+[example notebooks](https://github.com/empymod/example-notebooks). A good way
+to get started is by following the
+[*Geophysical Tutorial*](http://library.seg.org/doi/pdf/10.1190/tle36040352.1)
+from the April 2017 issue of *The Leading Edge*
+([source](https://github.com/empymod/article-tle2017)).
 
 
 ## Features
+
 - Calculates the complete (diffusion and wave phenomena) 3D electromagnetic
   field in a layered-earth model including vertical transverse isotropic (VTI)
   resistivity, VTI electric permittivity, and VTI magnetic permeability, for
@@ -97,28 +92,31 @@ Lots of examples can be found in the
     - Reflected wave
     - Airwave (semi-analytical in the case of step responses)
 
+
 ## Add-ons
 
-The add-ons for empymod provide some very specific, useful functionalities. At
-the moment there are two add-ons:
+The add-ons for empymod provide some very specific, additional functionalities:
   - `tmtemod`: Return up- and down-going TM/TE-mode contributions for
     x-directed electric sources and receivers, which are located in the same
     layer.
   - `fdesign`: Design digital linear filters for the Hankel and Fourier
   transforms.
 
-## Code
+
+## Contributing
 
 If you want to dig deeper you can find the source of empymod, its add-ons, its
 accompanying notebooks, and the published articles on the
-[empymod project page](https://github.com/empymod).
-
-
-## Contributing
+[empymod GitHub page](https://github.com/empymod).
 Please get in touch if you would like to contribute some additional code to
 empymod or additional examples of its usage, encountered a bug, or simply have
-a question regarding its usage. Just make a pull-request or open an issue on
-GitHub. Have a look at the
+a question regarding its usage. Just make a
+[pull requests](https://github.com/empymod/empymod/pulls) or open an
+[issue](https://github.com/empymod/empymod/issues) on
+GitHub. You can also use the
+[contact form](https://werthmuller.org/contact) on my personal website if you
+would like to write me outside of GitHub.
+Have a look at the
 [Roadmap](https://github.com/empymod/empymod#roadmap)
 if you need an idea on what to work.
 
@@ -148,24 +146,6 @@ All releases have a Zenodo-DOI, provided on the
 [release-page](https://github.com/empymod/empymod/releases).
 
 
-## Contact
-
-Please use the possibilities provided by GitHub to get in touch
-([opening issues](https://github.com/empymod/empymod/issues),
-[pull requests](https://github.com/empymod/empymod/pulls)). Use the
-[contact form](https://werthmuller.org/contact) on my personal website if you
-would like to write me outside of GitHub.
-
-
-## Notice
-
-This software was initially (till 01/2017) developed with funding from
-*The Mexican National Council of Science and Technology*
-([Consejo Nacional de Ciencia y Tecnología](http://www.conacyt.gob.mx)),
-carried out at *The Mexican Institute of Petroleum IMP*
-([Instituto Mexicano del Petróleo](http://www.gob.mx/imp)).
-
-
 ## License
 
 Copyright 2016-2018 Dieter Werthmüller
@@ -180,6 +160,3 @@ Unless required by applicable law or agreed to in writing, software distributed
 under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations under the License.
-
-See the *LICENSE*-file in the root directory for a full reprint of the Apache
-License.
