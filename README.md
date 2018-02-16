@@ -29,18 +29,14 @@ domains.
   - `analytical`: interface to the analytical, space-frequency and space-time
     domain solutions.
 - Hankel transforms (wavenumber-frequency to space-frequency transform)
-  - Adaptive quadrature
-  - Fast Hankel transform
-    (includes 9 different filters between 51 and 801 points; own ones can be
-    provided)
-  - Quadrature with extrapolation
+  - Digital Linear Filters DLF (using included filters or providing own ones)
+  - Quadrature with extrapolation QWE
+  - Adaptive quadrature QUAD
 - Fourier transforms (space-frequency to space-time transform)
-  - Sine/Cosine-transforms
-    (includes 5 different filters between 81 and 241 points; own ones can be
-    provided)
-  - Quadrature with extrapolation
-  - Fast Fourier Transform
-  - Logarithmic Fast Fourier Transform
+  - Digital Linear Filters DLF (using included filters or providing own ones)
+  - Quadrature with extrapolation QWE
+  - Logarithmic Fast Fourier Transform FFTLog
+  - Fast Fourier Transform FFT
 - Analytical, space-frequency and space-time domain solutions
   - Complete full-space (electric and magnetic sources and receivers);
     space-frequency domain
@@ -61,7 +57,7 @@ The add-ons for empymod provide some very specific, additional functionalities:
 
 ## Documentation [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
 
-The manual of `empymod` can be found at
+The documentation of `empymod` can be found at
 [empymod.readthedocs.io](http://empymod.readthedocs.io/en/stable).
 
 
@@ -105,8 +101,8 @@ from the April 2017 issue of *The Leading Edge*
 ## Contributing
 
 Head over to the [empymod GitHub page](https://github.com/empymod) if you would
-like to contribute or file a bug. More information in this regard can also be
-found in the documentation.
+like to contribute or file a bug. See the documentation for more information in
+this regard.
 
 
 ## Citation
@@ -131,4 +127,4 @@ empymod would not exist:
 Copyright 2016-2018 Dieter Werthmüller
 
 Licensed under the Apache License, Version 2.0. See the `LICENSE`- and
-`NOTICE`-files on GitHub for more information.
+`NOTICE`-files on GitHub or the documentation for more information.
