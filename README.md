@@ -1,4 +1,4 @@
-[[Installation](#installation--requirements---)] [[Documentation](#documentation-)] [[Examples](#examples)] [[Features](#features)] [[Contributing](#contributing)] [[Citation](#citation)] [[License](#license)]
+[[Features](#features)] [[Documentation](#documentation-)] [[Installation](#installation--requirements---)] [[Examples](#examples)] [[Contributing](#contributing)] [[Citation](#citation)] [[License](#license)]
 
 The electromagnetic modeller **empymod** can model electric or magnetic
 responses due to a three-dimensional electric or magnetic source in a
@@ -8,49 +8,6 @@ electric permittivity, and VTI magnetic permeability, from very low frequencies
 wavenumber-frequency domain, and various Hankel- and Fourier-transform methods
 are included to transform the responses into the space-frequency and space-time
 domains.
-
-
-## Installation & requirements [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
-
-You can install empymod either via `conda`:
-
-```bash
-conda install -c prisae empymod
-```
-
-or via `pip`:
-
-```bash
-pip install empymod
-```
-
-Required are Python version 3.4 or higher and the modules `NumPy` and `SciPy`.
-For the **add-ons** (`empyscripts`) just run the above command again, this
-time with `empyscripts` instead of `empymod`.
-
-If you are new to Python I recommend using a Python distribution, which will
-ensure that all dependencies are met, specifically properly compiled versions
-of `NumPy` and `SciPy`; I recommend using
-[Anaconda](https://www.anaconda.com/download). If you install Anaconda you
-can simply start the *Anaconda Navigator*, add the channel `prisae` and both
-`empymod` and `empyscripts` will appear in the package list and can be
-installed with a click.
-
-
-## Documentation [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
-
-The manual of `empymod` can be found at
-[empymod.readthedocs.io](http://empymod.readthedocs.io/en/stable).
-
-
-## Examples
-
-Lots of examples can be found in the
-[example notebooks](https://github.com/empymod/example-notebooks). A good way
-to get started is by following the
-[*Geophysical Tutorial*](http://library.seg.org/doi/pdf/10.1190/tle36040352.1)
-from the April 2017 issue of *The Leading Edge*
-([source](https://github.com/empymod/article-tle2017)).
 
 
 ## Features
@@ -102,6 +59,49 @@ The add-ons for empymod provide some very specific, additional functionalities:
   transforms.
 
 
+## Documentation [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
+
+The manual of `empymod` can be found at
+[empymod.readthedocs.io](http://empymod.readthedocs.io/en/stable).
+
+
+## Installation & requirements [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
+
+You can install empymod either via `conda`:
+
+```bash
+conda install -c prisae empymod
+```
+
+or via `pip`:
+
+```bash
+pip install empymod
+```
+
+Required are Python version 3.4 or higher and the modules `NumPy` and `SciPy`.
+For the **add-ons** (`empyscripts`) just run the above command again, this
+time with `empyscripts` instead of `empymod`.
+
+If you are new to Python I recommend using a Python distribution, which will
+ensure that all dependencies are met, specifically properly compiled versions
+of `NumPy` and `SciPy`; I recommend using
+[Anaconda](https://www.anaconda.com/download). If you install Anaconda you
+can simply start the *Anaconda Navigator*, add the channel `prisae` and both
+`empymod` and `empyscripts` will appear in the package list and can be
+installed with a click.
+
+
+## Examples
+
+Lots of examples can be found in the
+[example notebooks](https://github.com/empymod/example-notebooks). A good way
+to get started is by following the
+[*Geophysical Tutorial*](http://library.seg.org/doi/pdf/10.1190/tle36040352.1)
+from the April 2017 issue of *The Leading Edge*
+([source](https://github.com/empymod/article-tle2017)).
+
+
 ## Contributing
 
 Head over to the [empymod GitHub page](https://github.com/empymod) if you would
@@ -118,33 +118,17 @@ this article:
 > VTI media in Python: empymod: Geophysics, 82(6), WB9-WB19; DOI:
 > [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
 
-Also consider citing Hunziker et al. (2015) and Key (2012), without which
-empymod would not exist:
-
-> Hunziker, J., J. Thorbecke, and E. Slob, 2015, The electromagnetic response in
-> a layered vertical transverse isotropic medium: A new look at an old problem:
-> Geophysics, 80(1), F1-F18; DOI:
-> [10.1190/geo2013-0411.1](http://doi.org/10.1190/geo2013-0411.1).  
->  
-> Key, K., 2012, Is the fast Hankel transform faster than quadrature?:
-> Geophysics, 77(3) F21-F30; DOI:
-> [10.1190/geo2011-0237.1](http://doi.org/10.1190/geo2011-0237.1).
-
 All releases have a Zenodo-DOI, provided on the
 [release-page](https://github.com/empymod/empymod/releases).
+Also consider citing
+[Hunziker et al. (2015)](https://doi.org/10.1190/geo2013-0411.1) and
+[Key (2012)](https://doi.org/10.1190/geo2011-0237.1), without which
+empymod would not exist:
 
 
-## License
+## License information
 
 Copyright 2016-2018 Dieter Werthmüller
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License.  You may obtain a copy of the
-License at
-
-[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-
-Unless required by applicable law or agreed to in writing, software distributed
-under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations under the License.
+Licensed under the Apache License, Version 2.0. See the `LICENSE`- and
+`NOTICE`-files on GitHub for more information.
