@@ -1,4 +1,4 @@
-[[Features](#features)] [[Documentation](#documentation-)] [[Installation](#installation--requirements---)] [[Examples](#examples)] [[Contributing](#contributing)] [[Citation](#citation)] [[License](#license)]
+[[Features](#features)] [[Documentation](#documentation-)] [[Installation](#installation--requirements---)] [[Examples](#examples)] [[Contributing](#contributing)] [[Citation](#citation)] [[License](#license-information)]
 
 The electromagnetic modeller **empymod** can model electric or magnetic
 responses due to a three-dimensional electric or magnetic source in a
