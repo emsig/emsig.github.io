@@ -119,7 +119,7 @@ All releases have a Zenodo-DOI, provided on the
 Also consider citing
 [Hunziker et al. (2015)](https://doi.org/10.1190/geo2013-0411.1) and
 [Key (2012)](https://doi.org/10.1190/geo2011-0237.1), without which
-empymod would not exist:
+empymod would not exist.
 
 
 ## License information
