@@ -76,8 +76,11 @@ pip install empymod
 ```
 
 Required are Python version 3.4 or higher and the modules `NumPy` and `SciPy`.
-For the **add-ons** (`empyscripts`) just run the above command again, this
-time with `empyscripts` instead of `empymod`.
+For the **add-ons** (`empyscripts`
+[![](https://anaconda.org/prisae/empyscripts/badges/version.svg)](https://anaconda.org/prisae/empyscripts)
+[![](https://img.shields.io/pypi/v/empyscripts.svg)](https://pypi.python.org/pypi/empyscripts))
+just run the above command again, this time with `empyscripts` instead of
+`empymod`.
 
 If you are new to Python I recommend using a Python distribution, which will
 ensure that all dependencies are met, specifically properly compiled versions
