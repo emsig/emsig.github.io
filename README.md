@@ -117,8 +117,8 @@ this article:
 > VTI media in Python: empymod: Geophysics, 82(6), WB9-WB19; DOI:
 > [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
 
-All releases have a Zenodo-DOI, provided on the
-[release-page](https://github.com/empymod/empymod/releases).
+All releases have a [Zenodo-DOI](https://doi.org/10.5281/zenodo.593094),
+provided on the [release-page](https://github.com/empymod/empymod/releases).
 Also consider citing
 [Hunziker et al. (2015)](https://doi.org/10.1190/geo2013-0411.1) and
 [Key (2012)](https://doi.org/10.1190/geo2011-0237.1), without which
