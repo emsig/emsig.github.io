@@ -12,7 +12,6 @@ domains.
 
 ## Features
 
-**empymod**
 - Calculates the complete (diffusion and wave phenomena) 3D electromagnetic
   field in a layered-earth model including vertical transverse isotropic (VTI)
   resistivity, VTI electric permittivity, and VTI magnetic permeability, for
@@ -45,14 +44,18 @@ domains.
     - Direct wave (= diffusive full-space solution)
     - Reflected wave
     - Airwave (semi-analytical in the case of step responses)
-
-**empyscripts (add-ons)**  
-The add-ons for empymod provide some very specific, additional functionalities:
+- Add-ons (`empymod.scripts`)  
+  The add-ons for empymod provide some very specific, additional functionalities:
   - `tmtemod`: Return up- and down-going TM/TE-mode contributions for
     x-directed electric sources and receivers, which are located in the same
     layer.
   - `fdesign`: Design digital linear filters for the Hankel and Fourier
-  transforms.
+    transforms.
+  - `printinfo`: Can be used to show date, time, and package version information
+    at the end of a notebook or script:
+    - `versions('HTML')` for Jupyter Notebooks, and
+    - `versions()` for IPython, QT, and Python consoles.
+
 
 
 ## Documentation [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
@@ -76,19 +79,13 @@ pip install empymod
 ```
 
 Required are Python version 3.4 or higher and the modules `NumPy` and `SciPy`.
-For the **add-ons** (`empyscripts`
-[![](https://anaconda.org/prisae/empyscripts/badges/version.svg)](https://anaconda.org/prisae/empyscripts)
-[![](https://img.shields.io/pypi/v/empyscripts.svg)](https://pypi.python.org/pypi/empyscripts))
-just run the above command again, this time with `empyscripts` instead of
-`empymod`.
 
 If you are new to Python I recommend using a Python distribution, which will
 ensure that all dependencies are met, specifically properly compiled versions
 of `NumPy` and `SciPy`; I recommend using
 [Anaconda](https://www.anaconda.com/download). If you install Anaconda you
-can simply start the *Anaconda Navigator*, add the channel `prisae` and both
-`empymod` and `empyscripts` will appear in the package list and can be
-installed with a click.
+can simply start the *Anaconda Navigator*, add the channel `prisae`, and
+`empymod` will appear in the package list and can be installed with a click.
 
 
 ## Examples
