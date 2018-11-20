@@ -78,7 +78,7 @@ or via `pip`:
 pip install empymod
 ```
 
-Required are Python version 3.4 or higher and the modules `NumPy` and `SciPy`.
+Required are Python version 3.5 or higher and the modules `NumPy` and `SciPy`.
 
 If you are new to Python I recommend using a Python distribution, which will
 ensure that all dependencies are met, specifically properly compiled versions
