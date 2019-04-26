@@ -1,4 +1,6 @@
-[[Features](#features)] [[Documentation](#documentation-)] [[Installation](#installation--requirements---)] [[Examples](#examples)] [[Contributing](#contributing)] [[Citation](#citation)] [[License](#license-information)]
+<img src="./assets/logo-empymod-plain.png" alt="empymod" width="250"/>
+
+### An open-source full 3D electromagnetic modeller for 1D VTI media.
 
 The electromagnetic modeller **empymod** can model electric or magnetic
 responses due to a three-dimensional electric or magnetic source in a
@@ -7,124 +9,60 @@ electric permittivity, and VTI magnetic permeability, from very low frequencies
 (DC) to very high frequencies (GPR). The calculation is carried out in the
 wavenumber-frequency domain, and various Hankel- and Fourier-transform methods
 are included to transform the responses into the space-frequency and space-time
-domains.
+domains. It is written entirely in Python and licensed under the *Apache
+License, Version 2.0*.
 
+**Useful links:**
+- <i class="fas fa-book fa-lg"></i> Manual: [empymod.rtfd.org](https://empymod.readthedocs.io) [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
+    - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://empymod.readthedocs.io/en/stable/index.html#features)
+    - <i class="fas fa-copy fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
+- <i class="fas fa-scroll fa-lg"></i> Examples: [empymod-examples](https://github.com/empymod/empymod-examples)
 
-## Features
+<br>
+<hr style="height:1px;border:none;color:#000000; background:#000000">
+<br>
+<img src="./assets/logo-emg3d-transp.png" alt="emg3d" width="250"/>
 
-- Calculates the complete (diffusion and wave phenomena) 3D electromagnetic
-  field in a layered-earth model including vertical transverse isotropic (VTI)
-  resistivity, VTI electric permittivity, and VTI magnetic permeability, for
-  electric and magnetic sources as well as electric and magnetic receivers.
-- Modelling routines:
-  - `bipole`: arbitrary oriented, finite length bipoles with given source
-    strength; space-frequency and space-time domains.
-  - `dipole`: infinitesimal small dipoles oriented along the principal axes,
-    normalized field; space-frequency and space-time domains.
-  - `wavenumber`: as `dipole`, but returns the wavenumber-frequency domain
-    response.
-  - `gpr`: calculates the ground-penetrating radar response for given central
-    frequency, using a Ricker wavelet (experimental).
-  - `analytical`: interface to the analytical, space-frequency and space-time
-    domain solutions.
-- Hankel transforms (wavenumber-frequency to space-frequency transform)
-  - Digital Linear Filters DLF (using included filters or providing own ones)
-  - Quadrature with extrapolation QWE
-  - Adaptive quadrature QUAD
-- Fourier transforms (space-frequency to space-time transform)
-  - Digital Linear Filters DLF (using included filters or providing own ones)
-  - Quadrature with extrapolation QWE
-  - Logarithmic Fast Fourier Transform FFTLog
-  - Fast Fourier Transform FFT
-- Analytical, space-frequency and space-time domain solutions
-  - Complete full-space (electric and magnetic sources and receivers);
-    space-frequency domain
-  - Diffusive half-space (electric sources and receivers); space-frequency and
-    space-time domains
-    - Direct wave (= diffusive full-space solution)
-    - Reflected wave
-    - Airwave (semi-analytical in the case of step responses)
-- Add-ons (`empymod.scripts`)  
-  The add-ons for empymod provide some very specific, additional functionalities:
-  - `tmtemod`: Return up- and down-going TM/TE-mode contributions for
-    x-directed electric sources and receivers, which are located in the same
-    layer.
-  - `fdesign`: Design digital linear filters for the Hankel and Fourier
-    transforms.
-  - `printinfo`: Can be used to show date, time, and package version information
-    at the end of a notebook or script:
-    - `versions('HTML')` for Jupyter Notebooks, and
-    - `versions()` for IPython, QT, and Python consoles.
+### A multigrid solver for 3D electromagnetic diffusion.
 
+The multigrid solver **emg3d** is a solver for 3D electromagnetic diffusion
+with tri-axial electrical anisotropy. The matrix-free solver can be used as
+main solver or as preconditioner for one of the Krylov subspace methods
+implemented in `scipy.sparse.linalg`, and the governing equations are
+discretized on a staggered Yee grid. The code is written completely in Python
+using the numpy/scipy-stack, where the most time- and memory-consuming parts
+are sped up through jitted numba-functions. It is licensed under the *Apache
+License, Version 2.0*.
 
+**Useful links:**
+- <i class="fas fa-book fa-lg"></i> Manual: [emg3d.rtfd.org](https://emg3d.readthedocs.io)
+    - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.readthedocs.io/en/stable/index.html#features)
+    - <i class="fas fa-copy fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
+- <i class="fas fa-scroll fa-lg"></i> Examples: [emg3d-examples](https://github.com/empymod/emg3d-examples)
 
-## Documentation [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
-
-The documentation of `empymod` can be found at
-[empymod.readthedocs.io](http://empymod.readthedocs.io/en/stable).
-
-
-## Installation & requirements [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
-
-You can install empymod either via `conda`:
-
-```bash
-conda install -c prisae empymod
-```
-
-or via `pip`:
-
-```bash
-pip install empymod
-```
-
-Required are Python version 3.5 or higher and the modules `NumPy` and `SciPy`.
-
-If you are new to Python I recommend using a Python distribution, which will
-ensure that all dependencies are met, specifically properly compiled versions
-of `NumPy` and `SciPy`; I recommend using
-[Anaconda](https://www.anaconda.com/download). If you install Anaconda you
-can simply start the *Anaconda Navigator*, add the channel `prisae`, and
-`empymod` will appear in the package list and can be installed with a click.
-
-
-## Examples
-
-Lots of examples can be found in the
-[example notebooks](https://github.com/empymod/example-notebooks). A good way
-to get started is by following the
-[*Geophysical Tutorial*](http://library.seg.org/doi/pdf/10.1190/tle36040352.1)
-from the April 2017 issue of *The Leading Edge*
-([source](https://github.com/empymod/article-tle2017)).
-
+<br>
+<hr style="height:1px;border:none;color:#000000; background:#000000">
 
 ## Contributing
 
-Head over to the [empymod GitHub page](https://github.com/empymod) if you would
-like to contribute or file a bug. See the documentation for more information in
-this regard.
+- <i class="fab fa-github fa-lg"></i>
+  [empymod GitHub page](https://github.com/empymod)  
+  Submit bugs, fix typos, contribute code, and so much more!
+- <i class="fab fa-slack fa-lg"></i>
+  [SimPEG on Slack](http://slack.simpeg.xyz)  
+  Join the Slack channel &laquo;em-x-d&raquo; of [SimPEG](https://simpeg.xyz).
+- <i class="fas fa-bookmark fa-lg"></i>Cite us:
 
+  If you publish results for which you used our codes, please give credit by
+  citing us.
 
-## Citation
+  **empymod** - [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.593094.svg)](https://doi.org/10.5281/zenodo.593094)
 
-If you publish results for which you used empymod, please give credit by citing
-[Werthmüller (2017)](http://doi.org/10.1190/geo2016-0626.1):
+  > Werthmüller, D., 2017, An open-source full 3D electromagnetic modeler for
+  > 1D VTI media in Python: empymod: Geophysics, 82(6), WB9--WB19; DOI:
+  > [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
 
-> Werthmüller, D., 2017, An open-source full 3D electromagnetic modeler for 1D
-> VTI media in Python: empymod: Geophysics, 82(6), WB9-WB19; DOI:
-> [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
+  **emg3d** A Zenodo-DOI and citation will follow soon.
 
-All releases have a [Zenodo-DOI](https://doi.org/10.5281/zenodo.593094),
-provided on the [release-page](https://github.com/empymod/empymod/releases).
-Also consider citing
-[Hunziker et al. (2015)](https://doi.org/10.1190/geo2013-0411.1) and
-[Key (2012)](https://doi.org/10.1190/geo2011-0237.1), without which
-empymod would not exist.
-
-
-## License information
-
-Copyright 2016-2019 Dieter Werthmüller
-
-Licensed under the Apache License, Version 2.0. See the `LICENSE`- and
-`NOTICE`-files on GitHub or the documentation for more information.
+  You can find a list of all articles related to *empymod* and *emg3d* in the
+  [publications-repo](https://github.com/empymod/publications).
