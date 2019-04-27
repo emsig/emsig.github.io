@@ -13,12 +13,10 @@ domains. It is written entirely in Python and licensed under the *Apache
 License, Version 2.0*.
 
 **Useful links:**
-<ul class="fa-ul">
-- <i class="fas fa-book fa-2x"></i> Manual: [empymod.rtfd.org](https://empymod.readthedocs.io) [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
-    - <i class="fas fa-copy fa-3x"></i> [Feature-list](https://empymod.readthedocs.io/en/stable/index.html#features)
-    - <i class="fab fa-python fa-4x"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
+- <i class="fas fa-book fa-lg"></i> Manual: [empymod.rtfd.org](https://empymod.readthedocs.io) [![](https://readthedocs.org/projects/empymod/badge/?version=stable)](https://empymod.readthedocs.io/en/stable/?badge=stable)
+    - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://empymod.readthedocs.io/en/stable/index.html#features)
+    - <i class="fab fa-python fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://anaconda.org/prisae/empymod/badges/version.svg)](https://anaconda.org/prisae/empymod)  [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [empymod-examples](https://github.com/empymod/empymod-examples)
-</ul>
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
@@ -39,7 +37,7 @@ License, Version 2.0*.
 **Useful links:**
 - <i class="fas fa-book fa-lg"></i> Manual: [emg3d.rtfd.org](https://emg3d.readthedocs.io)
     - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.readthedocs.io/en/stable/index.html#features)
-    - <i class="fas fa-copy fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
+    - <i class="fab fa-python fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [emg3d-examples](https://github.com/empymod/emg3d-examples)
 
 <br>
