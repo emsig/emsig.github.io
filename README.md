@@ -42,16 +42,16 @@ discretized on a staggered Yee grid.
 ## Contributing
 
 - <i class="fab fa-github fa-lg"></i>
-  [empymod GitHub page](https://github.com/empymod)  
-  Submit bugs, fix typos, contribute code, and so much more!
+  [empymod GitHub page](https://github.com/empymod)
+    - Submit bugs, fix typos, contribute code, and so much more!
 - <i class="fab fa-slack fa-lg"></i>
-  [SimPEG on Slack](http://slack.simpeg.xyz)  
-  Join the Slack channel &laquo;em-x-d&raquo; of [SimPEG](https://simpeg.xyz).
+  [SimPEG on Slack](http://slack.simpeg.xyz)
+    - Join the Slack channel &laquo;em-x-d&raquo; of
+      [SimPEG](https://simpeg.xyz).
 - <i class="fas fa-bookmark fa-lg"></i>Cite us:
     - If you publish results for which you used our codes, please give credit
       by citing us.
-    - <i class="fas fa-code fa-lg"></i> **empymod**  
-      [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.593094.svg)](https://doi.org/10.5281/zenodo.593094)
+    - <i class="fas fa-code fa-lg"></i> **empymod** &rArr; [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.593094.svg)](https://doi.org/10.5281/zenodo.593094)
       > Werthmüller, D., 2017, An open-source full 3D electromagnetic modeler
       > for 1D VTI media in Python: empymod: Geophysics, 82(6), WB9--WB19; DOI:
       > [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
