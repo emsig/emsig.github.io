@@ -29,7 +29,6 @@ electrical anisotropy. The matrix-free solver can be used as main solver or as
 preconditioner for Krylov subspace methods, and the governing equations are
 discretized on a staggered Yee grid.
 
-**Useful links:**
 - <i class="fas fa-book fa-lg"></i> Manual: [emg3d.rtfd.org](https://emg3d.readthedocs.io)
     - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.readthedocs.io/en/stable/index.html#features)
     - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
