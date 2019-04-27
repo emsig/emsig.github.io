@@ -18,9 +18,7 @@ License, Version 2.0*.
     - <i class="fab fa-python fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://img.shields.io/conda/v/prisae/empymod.svg)](https://anaconda.org/prisae/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [empymod-examples](https://github.com/empymod/empymod-examples)
 
-<br>
-<hr style="height:1px;border:none;color:#000000; background:#000000">
-<br>
+<br><hr style="height:1px;border:none;color:#000000; background:#000000"><br>
 <img src="./assets/logo-emg3d-transp-web.png" alt="emg3d" width="250"/>
 
 ### A multigrid solver for 3D electromagnetic diffusion.
@@ -40,8 +38,7 @@ License, Version 2.0*.
     - <i class="fab fa-python fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [emg3d-examples](https://github.com/empymod/emg3d-examples)
 
-<br>
-<hr style="height:1px;border:none;color:#000000; background:#000000">
+<br><hr style="height:1px;border:none;color:#000000; background:#000000">
 
 ## Contributing
 
