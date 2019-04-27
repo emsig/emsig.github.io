@@ -56,13 +56,15 @@ License, Version 2.0*.
   If you publish results for which you used our codes, please give credit by
   citing us.
 
-  **empymod** - [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.593094.svg)](https://doi.org/10.5281/zenodo.593094)
+    - <i class="fas fa-code fa-lg"></i> **empymod**  
+      [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.593094.svg)](https://doi.org/10.5281/zenodo.593094)
 
-  > Werthmüller, D., 2017, An open-source full 3D electromagnetic modeler for
-  > 1D VTI media in Python: empymod: Geophysics, 82(6), WB9--WB19; DOI:
-  > [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
+      > Werthmüller, D., 2017, An open-source full 3D electromagnetic modeler
+      > for 1D VTI media in Python: empymod: Geophysics, 82(6), WB9--WB19; DOI:
+      > [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
 
-  **emg3d** A Zenodo-DOI and citation will follow soon.
+    - <i class="fas fa-code fa-lg"></i> **emg3d**  
+      A Zenodo-DOI and citation will follow soon.
 
   You can find a list of all articles related to *empymod* and *emg3d* in the
   [publications-repo](https://github.com/empymod/publications).
