@@ -12,10 +12,10 @@ responses into the space-frequency and space-time domains.
 
 - <i class="fas fa-book fa-lg"></i> Manual: [empymod.rtfd.org](https://empymod.readthedocs.io) [![](https://img.shields.io/readthedocs/empymod/stable.svg?label=rtfd)](https://empymod.readthedocs.io/en/stable)
     - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://empymod.readthedocs.io/en/stable/index.html#features)
-    - <i class="fab fa-laptop-code fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://img.shields.io/conda/v/prisae/empymod.svg)](https://anaconda.org/prisae/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
+    - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://img.shields.io/conda/v/prisae/empymod.svg)](https://anaconda.org/prisae/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [empymod-examples](https://github.com/empymod/empymod-examples)
 - <i class="fas fa-balance-sacle fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- <i class="fas fa-python fa-lg"></i> Requirements: Python 3.5+; NumPy, SciPy, (numexpr)
+- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.5+; NumPy, SciPy, (numexpr)
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
@@ -32,10 +32,10 @@ discretized on a staggered Yee grid.
 **Useful links:**
 - <i class="fas fa-book fa-lg"></i> Manual: [emg3d.rtfd.org](https://emg3d.readthedocs.io)
     - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.readthedocs.io/en/stable/index.html#features)
-    - <i class="fab fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
+    - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [emg3d-examples](https://github.com/empymod/emg3d-examples)
 - <i class="fas fa-balance-sacle fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- <i class="fas fa-python fa-lg"></i> Requirements: Python 3.7+; NumPy, SciPy, Numba, discretize (from SimPEG)
+- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; NumPy, SciPy, Numba, discretize (from SimPEG)
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
