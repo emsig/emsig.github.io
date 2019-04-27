@@ -21,7 +21,7 @@ License, Version 2.0*.
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
 <br>
-<img src="./assets/logo-emg3d-transp.png" alt="emg3d" width="250"/>
+<img src="./assets/logo-emg3d-transp-web.png" alt="emg3d" width="250"/>
 
 ### A multigrid solver for 3D electromagnetic diffusion.
 
