@@ -1,44 +1,39 @@
 <img src="./assets/logo-empymod-plain.png" alt="empymod" width="250"/>
 
-### An open-source full 3D electromagnetic modeller for 1D VTI media.
+### 3D EM modeller for 1D VTI media
 
-The electromagnetic modeller **empymod** can model electric or magnetic
-responses due to a three-dimensional electric or magnetic source in a
-layered-earth model with vertical transverse isotropic (VTI) resistivity, VTI
-electric permittivity, and VTI magnetic permeability, from very low frequencies
-(DC) to very high frequencies (GPR). The calculation is carried out in the
-wavenumber-frequency domain, and various Hankel- and Fourier-transform methods
-are included to transform the responses into the space-frequency and space-time
-domains. It is written entirely in Python and licensed under the *Apache
-License, Version 2.0*.
+The Python modeller **empymod** can calculate electric or magnetic responses
+due to a 3D electric or magnetic source in a layered-earth model with vertical
+transverse isotropic (VTI) resistivity, VTI electric permittivity, and VTI
+magnetic permeability, from very low frequencies (DC) to very high frequencies
+(GPR). The calculation is carried out in the wavenumber-frequency domain, and
+various Hankel- and Fourier-transform methods are included to transform the
+responses into the space-frequency and space-time domains.
 
-**Useful links:**
 - <i class="fas fa-book fa-lg"></i> Manual: [empymod.rtfd.org](https://empymod.readthedocs.io) [![](https://img.shields.io/readthedocs/empymod/stable.svg?label=rtfd)](https://empymod.readthedocs.io/en/stable)
     - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://empymod.readthedocs.io/en/stable/index.html#features)
     - <i class="fab fa-python fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://img.shields.io/conda/v/prisae/empymod.svg)](https://anaconda.org/prisae/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [empymod-examples](https://github.com/empymod/empymod-examples)
+- <i class="fas fa-balance-sacle fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
 <br>
 <img src="./assets/logo-emg3d-transp-web.png" alt="emg3d" width="250"/>
 
-### A multigrid solver for 3D electromagnetic diffusion.
+### Multigrid solver for 3D EM diffusion
 
-The multigrid solver **emg3d** is a solver for 3D electromagnetic diffusion
-with tri-axial electrical anisotropy. The matrix-free solver can be used as
-main solver or as preconditioner for one of the Krylov subspace methods
-implemented in `scipy.sparse.linalg`, and the governing equations are
-discretized on a staggered Yee grid. The code is written completely in Python
-using the numpy/scipy-stack, where the most time- and memory-consuming parts
-are sped up through jitted numba-functions. It is licensed under the *Apache
-License, Version 2.0*.
+The Python modeller **emg3d** is a multigrid solver for 3D EM diffusion with
+tri-axial electrical anisotropy. The matrix-free solver can be used as main
+solver or as preconditioner for Krylov subspace methods, and the governing
+equations are discretized on a staggered Yee grid.
 
 **Useful links:**
 - <i class="fas fa-book fa-lg"></i> Manual: [emg3d.rtfd.org](https://emg3d.readthedocs.io)
     - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.readthedocs.io/en/stable/index.html#features)
     - <i class="fab fa-python fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [emg3d-examples](https://github.com/empymod/emg3d-examples)
+- <i class="fas fa-balance-sacle fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
