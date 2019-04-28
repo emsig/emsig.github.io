@@ -56,5 +56,6 @@ discretized on a staggered Yee grid.
       > [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
   - <i class="fas fa-code fa-lg"></i> **emg3d**  
     A Zenodo-DOI and citation will follow soon.
+
   You can find a list of all articles related to *empymod* and *emg3d* in the
   [publications-repo](https://github.com/empymod/publications).
