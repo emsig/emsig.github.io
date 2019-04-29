@@ -39,7 +39,7 @@ discretized on a staggered Yee grid.
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
 
-## Contributing
+## <i class="fas fa-users fa-2x"></i> Contributing
 
 - <i class="fab fa-github fa-lg"></i>
   [empymod GitHub page](https://github.com/empymod)  
