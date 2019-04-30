@@ -34,7 +34,7 @@ discretized on a staggered Yee grid.
   - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [emg3d-examples](https://github.com/empymod/emg3d-examples)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; NumPy, SciPy, Numba, discretize (from SimPEG)
+- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; NumPy, SciPy, Numba, (discretize from SimPEG)
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
