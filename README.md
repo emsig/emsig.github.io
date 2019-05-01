@@ -29,9 +29,9 @@ electrical anisotropy. The matrix-free solver can be used as main solver or as
 preconditioner for Krylov subspace methods, and the governing equations are
 discretized on a staggered Yee grid.
 
-- <i class="fas fa-book fa-lg"></i> Manual: [emg3d.rtfd.org](https://emg3d.readthedocs.io)
+- <i class="fas fa-book fa-lg"></i> Manual: [emg3d.rtfd.org](https://emg3d.readthedocs.io) [![](https://img.shields.io/readthedocs/emg3d/stable.svg?label=rtfd)](https://emg3d.readthedocs.io/en/stable)
   - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.readthedocs.io/en/stable/index.html#features)
-  - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation)
+  - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation) [![](https://img.shields.io/conda/v/prisae/emg3d.svg)](https://anaconda.org/prisae/emg3d) [![](https://img.shields.io/pypi/v/emg3d.svg)](https://pypi.python.org/pypi/emg3d)
 - <i class="fas fa-scroll fa-lg"></i> Examples: [emg3d-examples](https://github.com/empymod/emg3d-examples)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; `numpy`, `scipy`, `numba`, (`discretize` from SimPEG)
@@ -55,5 +55,5 @@ discretized on a staggered Yee grid.
       > Werthmüller, D., 2017, An open-source full 3D electromagnetic modeler
       > for 1D VTI media in Python: empymod: Geophysics, 82(6), WB9--WB19; DOI:
       > [10.1190/geo2016-0626.1](http://doi.org/10.1190/geo2016-0626.1).
-  - <i class="fas fa-code fa-lg"></i> **emg3d**  
-    A Zenodo-DOI and citation will follow soon.
+  - <i class="fas fa-code fa-lg"></i> **emg3d** &nbsp; &nbsp; [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2656374.svg)](https://doi.org/10.5281/zenodo.2656374)  
+    A citation will follow soon.
