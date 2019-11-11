@@ -13,7 +13,7 @@ responses into the space-frequency and space-time domains.
 - <i class="fas fa-book fa-lg"></i> Manual: [empymod.rtfd.org](https://empymod.readthedocs.io) [![](https://img.shields.io/readthedocs/empymod/stable.svg?label=rtfd)](https://empymod.readthedocs.io/en/stable)
   - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://empymod.readthedocs.io/en/stable/index.html#features)
   - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://img.shields.io/conda/v/conda-forge/empymod.svg)](https://anaconda.org/conda-forge/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
-- <i class="fas fa-scroll fa-lg"></i> Examples: [empymod-examples](https://github.com/empymod/empymod-examples)
+- <i class="fas fa-scroll fa-lg"></i> Examples: [empymod.readthedocs.io/en/stable/empymod](https://empymod.readthedocs.io/en/stable/examples)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - <i class="fab fa-python fa-lg"></i> Requirements: Python 3.5+; `numpy`, `scipy`, (`numexpr`)
 
