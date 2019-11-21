@@ -12,7 +12,7 @@ responses into the space-frequency and space-time domains.
 
 - <i class="fas fa-book fa-lg"></i> [Manual](https://empymod.readthedocs.io/en/stable) [![](https://img.shields.io/readthedocs/empymod/stable.svg?label=rtfd)](https://empymod.readthedocs.io/en/stable)
   - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://empymod.readthedocs.io/en/stable/index.html#features)
-  - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/index.html#installation) [![](https://img.shields.io/conda/v/conda-forge/empymod.svg)](https://anaconda.org/conda-forge/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
+  - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/manual.html#installation) [![](https://img.shields.io/conda/v/conda-forge/empymod.svg)](https://anaconda.org/conda-forge/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 - <i class="fas fa-scroll fa-lg"></i> [Examples](https://empymod.readthedocs.io/en/stable/examples)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - <i class="fab fa-python fa-lg"></i> Requirements: Python 3.5+; `numpy`, `scipy`, (`numexpr`)
@@ -31,7 +31,7 @@ discretized on a staggered Yee grid.
 
 - <i class="fas fa-book fa-lg"></i> [Manual](https://emg3d.readthedocs.io/en/stable) [![](https://img.shields.io/readthedocs/emg3d/stable.svg?label=rtfd)](https://emg3d.readthedocs.io/en/stable)
   - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.readthedocs.io/en/stable/index.html#features)
-  - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/index.html#installation) [![](https://img.shields.io/conda/v/conda-forge/emg3d.svg)](https://anaconda.org/conda-forge/emg3d) [![](https://img.shields.io/pypi/v/emg3d.svg)](https://pypi.python.org/pypi/emg3d)
+  - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/usage.html#installation) [![](https://img.shields.io/conda/v/conda-forge/emg3d.svg)](https://anaconda.org/conda-forge/emg3d) [![](https://img.shields.io/pypi/v/emg3d.svg)](https://pypi.python.org/pypi/emg3d)
 - <i class="fas fa-scroll fa-lg"></i> [Examples](https://github.com/empymod/emg3d-examples)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; `numpy`, `scipy`, `numba`, (`discretize` from SimPEG)
