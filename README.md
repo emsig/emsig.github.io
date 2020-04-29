@@ -15,7 +15,7 @@ responses into the space-frequency and space-time domains.
   - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/manual.html#installation) [![](https://img.shields.io/conda/v/conda-forge/empymod.svg)](https://anaconda.org/conda-forge/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 - <i class="fas fa-scroll fa-lg"></i> [Examples](https://empymod.readthedocs.io/en/stable/examples)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.5+; `numpy`, `scipy`, (`numexpr`)
+- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.6+; `numpy`, `scipy`, `numba`
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
