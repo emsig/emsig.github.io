@@ -15,7 +15,7 @@ responses into the space-frequency and space-time domains.
   - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://empymod.readthedocs.io/en/stable/manual.html#installation) [![](https://img.shields.io/conda/v/conda-forge/empymod.svg)](https://anaconda.org/conda-forge/empymod) [![](https://img.shields.io/pypi/v/empymod.svg)](https://pypi.python.org/pypi/empymod)
 - <i class="fas fa-scroll fa-lg"></i> [Examples](https://empymod.readthedocs.io/en/stable/examples)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.6+; `SciPy` and `Numba`
+- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.6+; `scipy` and `numba`
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
@@ -34,7 +34,8 @@ discretized on a staggered Yee grid.
   - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/usage.html#installation) [![](https://img.shields.io/conda/v/conda-forge/emg3d.svg)](https://anaconda.org/conda-forge/emg3d) [![](https://img.shields.io/pypi/v/emg3d.svg)](https://pypi.python.org/pypi/emg3d)
 - <i class="fas fa-scroll fa-lg"></i> [Examples](https://empymod.github.io/emg3d-gallery/gallery)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; `SciPy`, `Numba`, and `empymod`
+- <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; `scipy` and `numba`.  
+Additionally recommended are `discretize` (advanced meshes), `xarray` (required for data handling of entire surveys), `h5py` (data storage), `empymod` (required for time-domain modelling), `tqdm`, and `scooby`.
 
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
