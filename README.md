@@ -32,7 +32,7 @@ discretized on a staggered Yee grid.
 - <i class="fas fa-book fa-lg"></i> [Manual](https://emg3d.readthedocs.io/en/stable) [![](https://img.shields.io/readthedocs/emg3d/stable.svg?label=rtfd)](https://emg3d.readthedocs.io/en/stable)
   - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.readthedocs.io/en/stable/index.html#features)
   - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.readthedocs.io/en/stable/usage.html#installation) [![](https://img.shields.io/conda/v/conda-forge/emg3d.svg)](https://anaconda.org/conda-forge/emg3d) [![](https://img.shields.io/pypi/v/emg3d.svg)](https://pypi.python.org/pypi/emg3d)
-- <i class="fas fa-scroll fa-lg"></i> [Examples](https://empymod.github.io/emg3d-gallery/gallery)
+- <i class="fas fa-scroll fa-lg"></i> [Examples](https://emsig.github.io/emg3d-gallery/gallery)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; `scipy` and `numba`.
 
@@ -44,15 +44,15 @@ Additionally recommended are `discretize` (advanced meshing and plotting), `xarr
 ## <i class="fas fa-users fa-2x"></i> Contributing
 
 - <i class="fab fa-github fa-lg"></i>
-  [empymod GitHub page](https://github.com/empymod)  
+  [EMSiG GitHub page](https://github.com/emsig)  
   Submit bugs, fix typos, contribute code, and so much more!
 - <i class="fab fa-slack fa-lg"></i>
   [SimPEG on Slack](http://slack.simpeg.xyz)  
-  Join the Slack channel &laquo;em-x-d&raquo; of [SimPEG](https://simpeg.xyz).
+  Join the Slack channel &laquo;emsig&raquo; of [SimPEG](https://simpeg.xyz).
 - <i class="fas fa-bookmark fa-lg"></i>Cite us:  
   If you publish results for which you used our codes, please give credit by
   citing us. A list of all articles can be found in the
-  [publications-repo](https://github.com/empymod/publications).
+  [publications-repo](https://github.com/emsig/publications).
   - <i class="fas fa-code fa-lg"></i> **empymod** &nbsp; &nbsp; [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.593094.svg)](https://doi.org/10.5281/zenodo.593094)
       > Werthmüller, D., 2017, An open-source full 3D electromagnetic modeler
       > for 1D VTI media in Python: empymod: Geophysics, 82(6), WB9--WB19; DOI:
