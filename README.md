@@ -32,7 +32,7 @@ discretized on a staggered Yee grid.
 - <i class="fas fa-book fa-lg"></i> [Manual](https://emg3d.emsig.xyz/en/stable) [![](https://img.shields.io/readthedocs/emg3d/stable.svg?label=rtfd)](https://emg3d.emsig.xyz/en/stable)
   - <i class="fas fa-copy fa-lg"></i> [Feature-list](https://emg3d.emsig.xyz/en/stable/index.html#features)
   - <i class="fas fa-laptop-code fa-lg"></i> [Installation guide](https://emg3d.emsig.xyz/en/stable/usage.html#installation) [![](https://img.shields.io/conda/v/conda-forge/emg3d.svg)](https://anaconda.org/conda-forge/emg3d) [![](https://img.shields.io/pypi/v/emg3d.svg)](https://pypi.python.org/pypi/emg3d)
-- <i class="fas fa-scroll fa-lg"></i> [Examples](https://emsig.emsig.xyz/emg3d-gallery/gallery)
+- <i class="fas fa-scroll fa-lg"></i> [Examples](https://emsig.xyz/emg3d-gallery/gallery)
 - <i class="fas fa-balance-scale fa-lg"></i> License: [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 - <i class="fab fa-python fa-lg"></i> Requirements: Python 3.7+; `scipy` and `numba`.
 
