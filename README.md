@@ -49,7 +49,7 @@ Additionally recommended are `discretize` (advanced meshing and plotting), `xarr
 - <i class="fab fa-slack fa-lg"></i>
   emsig on Slack  
   Join the &laquo;emsig&raquo; channel either on [SWUNG](https://swu.ng/slack) or on [SimPEG](http://slack.simpeg.xyz).
-- <i class="fab fa-email fa-lg"></i>
+- <i class="far fa-envelope fa-lg"></i>
   Contact per email  
   If you prefer personal email you can contact me through my website
   [werthmuller.org](https://werthmuller.org/contact/).
