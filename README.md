@@ -41,14 +41,18 @@ Additionally recommended are `discretize` (advanced meshing and plotting), `xarr
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
 
-## <i class="fas fa-users fa-2x"></i> Contributing
+## <i class="fas fa-users fa-2x"></i> Contributing, Contact, and Citing
 
 - <i class="fab fa-github fa-lg"></i>
-  [EMSiG GitHub page](https://github.com/emsig)  
+  [emsig GitHub page](https://github.com/emsig)  
   Submit bugs, fix typos, contribute code, and so much more!
 - <i class="fab fa-slack fa-lg"></i>
-  [SimPEG on Slack](http://slack.simpeg.xyz)  
-  Join the Slack channel &laquo;emsig&raquo; of [SimPEG](https://simpeg.xyz).
+  emsig on Slack  
+  Join the &laquo;emsig&raquo; channel either on [SWUNG](https://swu.ng/slack) or on [SimPEG](http://slack.simpeg.xyz).
+- <i class="fab fa-email fa-lg"></i>
+  Contact per email  
+  If you prefer personal email you can contact me through my website
+  [werthmuller.org](https://werthmuller.org/contact/).
 - <i class="fas fa-bookmark fa-lg"></i>Cite us:  
   If you publish results for which you used our codes, please give credit by
   citing us. A list of all articles can be found in the
