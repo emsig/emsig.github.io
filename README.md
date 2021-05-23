@@ -1,4 +1,4 @@
-<img src="./assets/logo-empymod-plain.png" alt="empymod" width="250"/>
+<img src="./assets/empymod-logo.png" alt="empymod" width="250"/>
 
 ### 3D EM modeller for 1D VTI media
 
@@ -20,7 +20,7 @@ responses into the space-frequency and space-time domains.
 <br>
 <hr style="height:1px;border:none;color:#000000; background:#000000">
 <br>
-<img src="./assets/logo-emg3d-transp-web.png" alt="emg3d" width="250"/>
+<img src="./assets/emg3d-logo.png" alt="emg3d" width="250"/>
 
 ### Multigrid solver for 3D EM diffusion
 
