@@ -1,7 +1,7 @@
 # Command line options.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = emg3d
+SPHINXPROJ    = emsig
 SOURCEDIR     = .
 BUILDDIR      = _build
 
