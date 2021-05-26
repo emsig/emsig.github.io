@@ -11,19 +11,19 @@ help:
 
 .ONESHELL:
 deploy:
-	mkdir tmp
-	cp -r _build/html/* tmp/.
-	cp -r _build/html/.[a-zA-Z]* tmp/.
-	cp CNAME tmp/.
-	cp -r .git tmp/.
-	cd tmp/
+	mkdir deploy
+	cp -r _build/html/* deploy/.
+	cp -r _build/html/.[a-zA-Z]* deploy/.
+	cp CNAME deploy/.
+	cp -r .git deploy/.
+	cd deploy/
 	git branch -D gh-pages &>/dev/null
 	git checkout --orphan gh-pages
 	git add --all
 	git commit -m 'Update website'
 	git push -f --set-upstream origin gh-pages
 	cd ..
-	rm -rf tmp/
+	rm -rf deploy/
 
 .PHONY: help Makefile
 
