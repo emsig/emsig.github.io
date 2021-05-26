@@ -13,6 +13,7 @@ help:
 deploy:
 	mkdir tmp
 	cp -r _build/html/* tmp/.
+	cp CNAME tmp/.
 	cp -r .git tmp/.
 	cd tmp/
 	touch .nojekyll
