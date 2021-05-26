@@ -13,7 +13,7 @@ help:
 deploy:
 	mkdir tmp
 	cp -r _build/html/* tmp/.
-	cp -r _build/html/.[a-z][A-Z]* tmp/.
+	cp -r _build/html/.[a-zA-Z]* tmp/.
 	cp CNAME tmp/.
 	cp -r .git tmp/.
 	cd tmp/
