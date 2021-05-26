@@ -1,0 +1,49 @@
+name: docs
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+defaults:
+  run:
+    shell: bash -l {0}
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Checks-out your repository under $GITHUB_WORKSPACE
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Build the documentation and check links
+        run: make html -b linkcheck
+
+      - name: Deploy to gh-pages
+        run: |
+          # Configure git to be the GitHub Actions account
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          # Create deploy folder
+          mkdir deploy
+          # Copy relevant files
+          cp -r _build/html/* deploy/.
+          cp CNAME deploy/.
+          cp -r .git deploy/.
+          # Move to deploy
+          cd deploy/
+          # Checkout gh-pages
+          git branch -D gh-pages &>/dev/null
+          git checkout --orphan gh-pages
+          git add --all
+          git commit -m 'Update website'
+          git push -f --set-upstream origin gh-pages
