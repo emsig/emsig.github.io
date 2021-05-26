@@ -35,4 +35,7 @@ html_file_suffix = '.html'
 html_sidebars = {
     "**": [],
 }
-html_css_files = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"]
+html_css_files = [
+    "style.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+]

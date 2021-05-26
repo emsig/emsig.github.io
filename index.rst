@@ -12,14 +12,14 @@
 ElectroMagnetic Simulation in Geophysics
 ========================================
 
-**emsig** are open-source Python codes to simulate electromagnetic data
-(license under Apache v2) . Their main targets are geophysical applications
-(exploration and monitoring, engineering, environmental), but they are by no
-means limited to that. Currently there are two main codes, `empymod
-<https://empymod.emsig.xyz>`_ and `emg3d <https://emg3d.emsig.xyz>`_. The
-former is a 3D code for layered media, the latter is a low-memory multigrid
-solver for 3D media. Both are written in Python and licensed under the
-permissive Apache v2.
+**emsig** are open-source codes to simulate electromagnetic data. Their main
+targets are geophysical applications (exploration and monitoring, engineering,
+environmental), but they are by no means limited to that. Currently there are
+two main codes, `empymod <https://empymod.emsig.xyz>`_ and `emg3d
+<https://emg3d.emsig.xyz>`_. The former is a 3D code for layered media, the
+latter is a low-memory multigrid solver for 3D media. Both are written in
+`Python <https://www.python.org/>`_ and released under the permissive
+`Apache-2.0 license <https://www.apache.org/licenses/LICENSE-2.0>`_.
 
 
 |
@@ -32,12 +32,12 @@ permissive Apache v2.
     ---
     :img-top: _static/empymod-logo.svg
 
-    **3D EM modeller for 1D VTI media**
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    3D EM modeller for 1D VTI media
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     .. link-button:: https://empymod.emsig.xyz
         :text: empymod.emsig.xyz
-        :classes: btn-block btn-secondary
+        :classes: btn-block btn-info stretched-link
 
     The modeller **empymod** can compute electric or magnetic responses due to
     a 3D electric or magnetic source in a layered-earth model with vertical
@@ -62,12 +62,12 @@ permissive Apache v2.
     ---
     :img-top: _static/emg3d-logo.svg
 
-    **Multigrid solver for 3D EM diffusion**
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Multigrid solver for 3D EM diffusion
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     .. link-button:: https://emg3d.emsig.xyz
         :text: emg3d.emsig.xyz
-        :classes: btn-block btn-secondary
+        :classes: btn-block btn-info stretched-link
 
     The modeller **emg3d** is a multigrid solver for 3D EM diffusion with
     tri-axial electrical anisotropy. The matrix-free solver can be used as main
@@ -97,23 +97,23 @@ permissive Apache v2.
     :container: container-lg pb-1
     :column: col-lg-12 p-2
 
-    :fa:`fab fa-github fa-2x padding=10em`
-    · `Submit bugs, fix typos, contribute code, and so much more!
+    :fa:`fab fa-github fa-2x`
+    `Submit bugs, fix typos, contribute code, and so much more!
     <https://github.com/emsig>`_
 
     ---
     :column: col-lg-12 p-2
 
-    :fa:`fab fa-slack fa-2x margin=10em`
-    · Join the **#emsig**-channel either on `SWUNG
+    :fa:`fab fa-slack fa-2x`
+    Join the **#emsig**-channel either on `SWUNG
     <https://swu.ng/slack>`_ or on `SimPEG <http://slack.simpeg.xyz>`_.
 
     ---
     :column: col-lg-12 p-2
 
     :fa:`far fa-envelope fa-2x`
-    · `If you prefer personal email you can contact me through
-    my website werthmuller.org. <https://werthmuller.org/contact/>`_
+    If you prefer personal email you can contact me through
+    my website `werthmuller.org. <https://werthmuller.org/contact/>`_
 
 |
 |
