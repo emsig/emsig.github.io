@@ -16,7 +16,6 @@ deploy:
 	cp CNAME tmp/.
 	cp -r .git tmp/.
 	cd tmp/
-	touch .nojekyll
 	git branch -D gh-pages &>/dev/null
 	git checkout --orphan gh-pages
 	git add --all

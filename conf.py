@@ -2,6 +2,7 @@ import time
 
 extensions = [
     'sphinx_panels',
+    'sphinx.ext.githubpages',
 ]
 panels_add_bootstrap_css = False
 
