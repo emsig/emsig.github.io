@@ -106,7 +106,7 @@ latter is a low-memory multigrid solver for 3D media. Both are written in
 
     :fa:`fab fa-slack fa-2x`
     Join the **#emsig**-channel either on `SWUNG
-    <https://swu.ng/slack>`_ or on `SimPEG <http://slack.simpeg.xyz>`_.
+    <https://swu.ng/slack>`_ or on 
 
     ---
     :column: col-lg-12 p-2
@@ -132,8 +132,6 @@ growing, open-source **EM & Potential Geo-Exploration Python Ecosystem**:
    <a href=https://pygimli.org><img src="https://www.pygimli.org/_static/gimli_logo.svg" style="max-height: 2cm;"></a>
 
    <a href=https://simpeg.xyz><img src="https://raw.github.com/simpeg/simpeg/master/docs/images/simpeg-logo.png" style="max-height: 2.5cm;"></a>
-
-   <a style="margin:1em" href=http://petgem.bsc.es><img src="http://petgem.bsc.es/_static/figures/petgem_logo.png" style="max-height: 3cm;"></a>
 
    <a href=https://gitlab.com/Rochlitz.R/custEM><img src="https://custem.readthedocs.io/en/latest/_static/custEMlogo.png" style="max-height: 1.5cm;"></a>
 
