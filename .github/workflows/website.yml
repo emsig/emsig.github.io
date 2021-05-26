@@ -37,6 +37,7 @@ jobs:
           mkdir deploy
           # Copy relevant files
           cp -r _build/html/* deploy/.
+          cp -r _build/html/.[a-z][A-Z]* deploy/.
           cp CNAME deploy/.
           cp -r .git deploy/.
           # Move to deploy
