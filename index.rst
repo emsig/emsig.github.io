@@ -153,7 +153,7 @@ growing, open-source **EM & Potential Geo-Exploration Python Ecosystem**:
 
 .. dropdown:: About the name and logo of **emsig**
 
-    The name **emsig** is an abbreviation in English and a word-play in German.
+    The name **emsig** is an abbreviation in English and a pun in German.
 
     It stands primarily as abbreviation for ElectroMagnetic Simulation in
     Geophysics. However, **emsig** is also a German adjective, meaning
