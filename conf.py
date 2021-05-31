@@ -6,7 +6,7 @@ extensions = [
 ]
 panels_add_bootstrap_css = False
 
-# templates_path = ['_templates']
+templates_path = ['_templates']
 source_suffix = '.rst'
 
 description = 'emsig: ElectroMagnetic Simulation in Geophysics'
