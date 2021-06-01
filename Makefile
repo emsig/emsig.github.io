@@ -25,6 +25,9 @@ deploy:
 	cd ..
 	rm -rf deploy/
 
+preview:
+	xdg-open _build/html/index.html
+
 .PHONY: help Makefile
 
 # Catch-all target: route all unknown targets to Sphinx using the new
