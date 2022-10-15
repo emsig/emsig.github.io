@@ -3,6 +3,7 @@
    :align: center
    :alt: emsig logo
    :target: https://emsig.xyz
+   :class: dark-light
 
 |
 |
@@ -176,4 +177,4 @@ growing, open-source **EM & Potential Geo-Exploration Python Ecosystem**:
     fields.
 
     .. image:: ./_static/emsig-logo.svg
-
+        :class: dark-light
