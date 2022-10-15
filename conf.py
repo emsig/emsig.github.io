@@ -1,10 +1,9 @@
 import time
 
 extensions = [
-    'sphinx_panels',
+    'sphinx_design',
     'sphinx.ext.githubpages',
 ]
-panels_add_bootstrap_css = False
 
 templates_path = ['_templates']
 source_suffix = '.rst'
