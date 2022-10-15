@@ -15,6 +15,9 @@ copyright = f'2018-{time.strftime("%Y")}, {author}'
 
 pygments_style = 'friendly'
 html_theme = 'pydata_sphinx_theme'
+html_context = {
+    "default_mode": "light",
+}
 
 html_static_path = ['_static']
 html_logo = '_static/emsig-logo.svg'
@@ -27,7 +30,7 @@ html_theme_options = {
     ],
     # "navbar_start": ["navbar-logo"],
     # "navbar_center": ["navbar-nav"],
-    # "navbar_end": ["navbar-icon-links"],
+    "navbar_end": ["navbar-icon-links"],
     # "footer_items": ["copyright", "sphinx-version"],
     "page_sidebar_items": [],
 }
