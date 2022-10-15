@@ -26,63 +26,68 @@ latter is a low-memory multigrid solver for 3D media. Both are written in
 |
 |
 
-.. panels::
-    :img-top-cls: p-5 pr-5
+.. grid:: 1 2 2 2
+    :gutter: 2
 
-    ---
-    :img-top: _static/empymod-logo.svg
+    .. grid-item-card::
+        :img-top: _static/empymod-logo.svg
 
-    3D EM modeller for 1D VTI media
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        3D EM modeller for 1D VTI media
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    .. link-button:: https://empymod.emsig.xyz
-        :text: empymod.emsig.xyz
-        :classes: btn-block btn-info stretched-link
+        .. button-link:: https://empymod.emsig.xyz
+            :expand:
+            :color: info
+            :click-parent:
 
-    The modeller **empymod** can compute electric or magnetic responses due to
-    a 3D electric or magnetic source in a layered-earth model with vertical
-    transverse isotropic (VTI) resistivity, VTI electric permittivity, and VTI
-    magnetic permeability, from very low frequencies (DC) to very high
-    frequencies (GPR). The computation is carried out in the
-    wavenumber-frequency domain, and various Hankel- and Fourier-transform
-    methods are included to transform the responses into the space-frequency
-    and space-time domains.
+            empymod.emsig.xyz
 
-    ++++++
+        The modeller **empymod** can compute electric or magnetic responses due
+        to a 3D electric or magnetic source in a layered-earth model with
+        vertical transverse isotropic (VTI) resistivity, VTI electric
+        permittivity, and VTI magnetic permeability, from very low frequencies
+        (DC) to very high frequencies (GPR). The computation is carried out in
+        the wavenumber-frequency domain, and various Hankel- and
+        Fourier-transform methods are included to transform the responses into
+        the space-frequency and space-time domains.
 
-    .. code:: bash
+        ++++++
 
-       pip install empymod
+        .. code:: bash
 
-    .. code:: bash
+            pip install empymod
 
-       conda install -c conda-forge empymod
+        .. code:: bash
 
+            conda install -c conda-forge empymod
 
-    ---
-    :img-top: _static/emg3d-logo.svg
+    .. grid-item-card::
+        :img-top: _static/emg3d-logo.svg
 
-    Multigrid solver for 3D EM diffusion
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        Multigrid solver for 3D EM diffusion
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    .. link-button:: https://emg3d.emsig.xyz
-        :text: emg3d.emsig.xyz
-        :classes: btn-block btn-info stretched-link
+        .. button-link:: https://emg3d.emsig.xyz
+            :expand:
+            :color: info
+            :click-parent:
 
-    The modeller **emg3d** is a multigrid solver for 3D EM diffusion with
-    tri-axial electrical anisotropy. The matrix-free solver can be used as main
-    solver or as preconditioner for Krylov subspace methods, and the governing
-    equations are discretized on a staggered Yee grid.
+            emg3d.emsig.xyz
 
-    ++++++
+        The modeller **emg3d** is a multigrid solver for 3D EM diffusion with
+        tri-axial electrical anisotropy. The matrix-free solver can be used as
+        main solver or as preconditioner for Krylov subspace methods, and the
+        governing equations are discretized on a staggered Yee grid.
 
-    .. code:: bash
+        ++++++
 
-       pip install emg3d
+        .. code:: bash
 
-    .. code:: bash
+            pip install emg3d
 
-       conda install -c conda-forge emg3d
+        .. code:: bash
+
+            conda install -c conda-forge emg3d
 
 |
 |
@@ -93,27 +98,26 @@ latter is a low-memory multigrid solver for 3D media. Both are written in
 
 **emsig** are community codes, please help to shape their future!
 
-.. panels::
-    :container: container-lg pb-1
-    :column: col-lg-12 p-2
+.. grid:: 1
+    :gutter: 2
 
-    :fa:`fab fa-github fa-2x`
-    `Submit bugs, fix typos, contribute code, and so much more!
-    <https://github.com/emsig>`_
+    .. grid-item-card::
 
-    ---
-    :column: col-lg-12 p-2
+        :fa:`fab fa-github fa-2x`
+        `Submit bugs, fix typos, contribute code, and so much more!
+        <https://github.com/emsig>`_
 
-    :fa:`fab fa-slack fa-2x`
-    Join the **#emsig**-channel either on `SWUNG
-    <https://swu.ng/slack>`_ or on `SimPEG <http://slack.simpeg.xyz>`_.
+    .. grid-item-card::
 
-    ---
-    :column: col-lg-12 p-2
+        :fa:`fab fa-slack fa-2x`
+        Join the **#emsig**-channel either on `SWUNG
+        <https://swu.ng/slack>`_ or on `SimPEG <http://slack.simpeg.xyz>`_.
 
-    :fa:`far fa-envelope fa-2x`
-    If you prefer personal email you can contact me through
-    my website `werthmuller.org. <https://werthmuller.org/contact/>`_
+    .. grid-item-card::
+
+        :fa:`far fa-envelope fa-2x`
+        If you prefer personal email you can contact me through
+        my website `werthmuller.org. <https://werthmuller.org/contact/>`_
 
 |
 |
@@ -153,7 +157,7 @@ growing, open-source **EM & Potential Geo-Exploration Python Ecosystem**:
 |
 |
 
-.. dropdown:: About the name and logo of **emsig**
+.. dropdown:: About the name and logo of emsig
 
     The name **emsig** is an abbreviation in English and a pun in German.
 
