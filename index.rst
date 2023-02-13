@@ -150,7 +150,13 @@ growing, open-source **EM & Potential Geo-Exploration Python Ecosystem**:
 
    <a style="margin:1em" href=https://softwareunderground.github.io/subsurface/><img src="https://raw.github.com/softwareunderground/subsurface/main/docs/source/_static/logos/subsurface.png" style="max-height: 3cm;"></a>
 
+   <a href=https://hkex.gitlab.io/resipy><img src="https://hkex.gitlab.io/resipy/_static/logo.png" style="max-height: 3cm;"></a>
+
+   <a href=https://hkex.gitlab.io/emagpy><img src="https://hkex.gitlab.io/emagpy/_static/logo.png" style="max-height: 3cm;"></a>
+
    <a href=https://emsig.xyz><img src="https://emsig.xyz/_static/emsig-logo.svg" style="max-height: 2cm;"></a>
+
+   <a href=https://mtpy2.readthedocs.io"><big>&nbsp;&nbsp;MTpy&nbsp;&nbsp;</big></a>
 
    </p>
 
