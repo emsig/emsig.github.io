@@ -142,7 +142,7 @@ growing, open-source **EM & Potential Geo-Exploration Python Ecosystem**:
 
    <a href=https://gitlab.com/Rochlitz.R/custEM><img src="https://custem.readthedocs.io/en/latest/_static/custEMlogo.png" style="max-height: 1.5cm;"></a>
 
-   <a href=https://docs.pyvista.org><img src="https://raw.github.com/pyvista/pyvista/main/doc/_static/pyvista_logo_sm.png" style="max-height: 2.5cm;"></a>
+   <a href=https://docs.pyvista.org><img src="https://raw.githubusercontent.com/pyvista/pyvista/main/doc/source/_static/pyvista_logo_sm.png" style="max-height: 2.5cm;"></a>
 
    <a style="margin:1em" href=https://www.fatiando.org><img src="https://raw.github.com/fatiando/logo/master/fatiando-logo-background.png" style="max-height: 3cm;"></a>
 
