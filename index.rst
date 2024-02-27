@@ -103,19 +103,19 @@ interest, such as smaller codes which were part of publications.
 
     .. grid-item-card::
 
-        :fa:`fab fa-github fa-2x`
+        :fa:`fa-brands fa-github fa-2x`
         `Submit bugs, fix typos, contribute code, and so much more!
         <https://github.com/emsig>`_
 
     .. grid-item-card::
 
-        :fa:`fab fa-slack fa-2x`
-        Join the **#emsig**-channel either on `SWUNG
-        <https://swu.ng/slack>`_ or on `SimPEG <http://slack.simpeg.xyz>`_.
+        :fa:`fa-regular fa-comments fa-2x`
+        Join the **#emsig**-channel either on the `SWUNG Chat
+        <https://swu.ng/mattermost>`_.
 
     .. grid-item-card::
 
-        :fa:`far fa-envelope fa-2x`
+        :fa:`fa-regular fa-envelope fa-2x`
         If you prefer personal email you can contact me through
         my website `werthmuller.org. <https://werthmuller.org/contact/>`_
 
