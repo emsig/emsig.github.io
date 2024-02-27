@@ -103,14 +103,14 @@ interest, such as smaller codes which were part of publications.
 
     .. grid-item-card::
 
-        :fa:`fa-brands fa-github fa-2x`
+        :fa:`code fa-2x`
         `Submit bugs, fix typos, contribute code, and so much more!
         <https://github.com/emsig>`_
 
     .. grid-item-card::
 
         :fa:`fa-regular fa-comments fa-2x`
-        Join the **#emsig**-channel either on the `SWUNG Chat
+        Join the **#emsig**-channel on the `SWUNG Chat
         <https://swu.ng/mattermost>`_.
 
     .. grid-item-card::
@@ -126,8 +126,8 @@ interest, such as smaller codes which were part of publications.
 Related ecosystem
 =================
 
-**emsig** and its codes **empymod** and **emg3d** are part of a bigger, fast
-growing, open-source **EM & Potential Geo-Exploration Python Ecosystem**:
+**emsig** and its codes are part of a bigger, fast growing, open-source **EM &
+Potential Geo-Exploration Python Ecosystem**:
 
 .. raw:: html
 
