@@ -15,9 +15,9 @@ copyright = f'2018-{time.strftime("%Y")}, {author}'
 
 pygments_style = 'friendly'
 html_theme = 'pydata_sphinx_theme'
-html_context = {
-    "default_mode": "light",
-}
+# html_context = {
+#     "default_mode": "light",
+# }
 
 html_static_path = ['_static']
 html_logo = '_static/emsig-logo.svg'

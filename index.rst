@@ -15,12 +15,11 @@ ElectroMagnetic Simulation in Geophysics
 
 **emsig** are open-source codes to simulate electromagnetic data. Their main
 targets are geophysical applications (exploration and monitoring, engineering,
-environmental), but they are by no means limited to that. Currently there are
-two main codes, `empymod <https://empymod.emsig.xyz>`_ and `emg3d
-<https://emg3d.emsig.xyz>`_. The former is a 3D code for layered media, the
-latter is a low-memory multigrid solver for 3D media. Both are written in
-`Python <https://www.python.org/>`_ and released under the permissive
-`Apache-2.0 license <https://www.apache.org/licenses/LICENSE-2.0>`_.
+environmental), but they are by no means limited to that. The codes with
+extensive documentation are listed on this page. The `emsig GitHub org
+<https://github.com/emsig/>`_ contains besides the main codes also related
+publications for reproducibility purposes and other associated things of
+interest, such as smaller codes which were part of publications.
 
 
 |
