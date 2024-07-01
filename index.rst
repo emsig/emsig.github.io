@@ -143,7 +143,7 @@ Potential Geo-Exploration Python Ecosystem**:
 
    <a href=https://docs.pyvista.org><img src="https://raw.githubusercontent.com/pyvista/pyvista/main/doc/source/_static/pyvista_logo_sm.png" style="max-height: 2.5cm;"></a>
 
-   <a style="margin:1em" href=https://www.fatiando.org><img src="https://raw.github.com/fatiando/logo/master/fatiando-logo-background.png" style="max-height: 3cm;"></a>
+   <a style="margin:1em" href=https://www.fatiando.org><img src="https://raw.github.com/fatiando/logo/blob/main/logos/fatiando-logo-background.png" style="max-height: 3cm;"></a>
 
    <a href=https://www.gempy.org><img src="https://raw.github.com/cgre-aachen/gempy/master/docs/source/_static/logos/gempy.png" style="max-height: 2.5cm;"></a>
 

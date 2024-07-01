@@ -29,7 +29,7 @@ html_theme_options = {
     # "navbar_center": ["navbar-nav"],
     # "navbar_end": ["navbar-icon-links"],
     # "footer_items": ["copyright", "sphinx-version"],
-    "page_sidebar_items": [],
+    "secondary_sidebar_items": [],
 }
 html_file_suffix = '.html'
 html_sidebars = {
