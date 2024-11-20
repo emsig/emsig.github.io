@@ -30,6 +30,12 @@ html_theme_options = {
     # "navbar_end": ["navbar-icon-links"],
     # "footer_items": ["copyright", "sphinx-version"],
     "secondary_sidebar_items": [],
+    "analytics": {
+        # The domain you'd like to use for this analytics instance
+        "plausible_analytics_domain": "emsig.xyz",
+        # The analytics script that is served by Plausible
+        "plausible_analytics_url": "https://plausible.io/js/plausible.js",
+    },
 }
 html_file_suffix = '.html'
 html_sidebars = {
