@@ -111,7 +111,7 @@ interest, such as smaller codes which were part of publications.
 
         :fa:`fa-regular fa-comments fa-2x`
         Join the **#emsig**-channel on the `SWUNG Chat
-        <https://swu.ng/mattermost>`_.
+        <https://softwareunderground.org/mattermost>`_.
 
     .. grid-item-card::
 
