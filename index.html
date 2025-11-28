@@ -1,0 +1,710 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ElectroMagnetic Simulation in Geophysics &#8212; emsig  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=b67f7c2c" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script data-domain="emsig.xyz" defer="defer" src="https://plausible.io/js/plausible.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta property="og:title" content="emsig">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emsig.xyz/">
+    <meta property="og:site_name" content="emsig">
+    <meta property="og:image" content="https://raw.github.com/emsig/logos/main/emsig/emsig-logo.png">
+    <meta property="og:description" content="ElectroMagnetic Simulation in Geophysics.">
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/emsig-logo.svg" class="logo__image only-light" alt="emsig  documentation - Home"/>
+    <img src="_static/emsig-logo.svg" class="logo__image only-dark pst-js-only" alt="emsig  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://empymod.emsig.xyz">
+    empymod
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://emg3d.emsig.xyz">
+    emg3d
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emsig" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://empymod.emsig.xyz">
+    empymod
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://emg3d.emsig.xyz">
+    emg3d
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emsig" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <a class="reference external image-reference" href="https://emsig.xyz"><img alt="emsig logo" class="dark-light align-center" src="_images/emsig-logo.svg" style="width: 400px;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<section id="electromagnetic-simulation-in-geophysics">
+<h1>ElectroMagnetic Simulation in Geophysics<a class="headerlink" href="#electromagnetic-simulation-in-geophysics" title="Link to this heading">#</a></h1>
+<p><strong>emsig</strong> are open-source codes to simulate electromagnetic data. Their main
+targets are geophysical applications (exploration and monitoring, engineering,
+environmental), but they are by no means limited to that. The main codes are
+listed on this page. The <a class="reference external" href="https://github.com/emsig/">emsig GitHub org</a>
+contains besides the main codes also related publications for reproducibility
+purposes and other associated things of interest, such as smaller codes which
+were part of publications.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/empymod-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">3D EM modeller for 1D VTI media</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://empymod.emsig.xyz"><span>empymod.emsig.xyz</span></a></span></p>
+<p class="sd-card-text">The modeller <strong>empymod</strong> can compute electric or magnetic responses due
+to a 3D electric or magnetic source in a layered-earth model with
+vertical transverse isotropic (VTI) resistivity, VTI electric
+permittivity, and VTI magnetic permeability, from very low frequencies
+(DC) to very high frequencies (GPR). The computation is carried out in
+the wavenumber-frequency domain, and various Hankel- and
+Fourier-transform methods are included to transform the responses into
+the space-frequency and space-time domains.</p>
+</div>
+<div class="sd-card-footer docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>empymod
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>empymod
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/emg3d-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Multigrid solver for 3D EM diffusion</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://emg3d.emsig.xyz"><span>emg3d.emsig.xyz</span></a></span></p>
+<p class="sd-card-text">The modeller <strong>emg3d</strong> is a multigrid solver for 3D EM diffusion with
+tri-axial electrical anisotropy. The matrix-free solver can be used as
+main solver or as preconditioner for Krylov subspace methods, and the
+governing equations are discretized on a staggered Yee grid.</p>
+</div>
+<div class="sd-card-footer docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>emg3d
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>emg3d
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/elfe3D-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Modelling with the total electric field approach using finite elements in 3D</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://github.com/emsig/elfe3D"><span>github.com/emsig/elfe3D</span></a></span></p>
+<p class="sd-card-text"><strong>elfe3D</strong> is a 3D forward modelling code that can simulate electric
+and magnetic field responses from frequency-domain controlled-source
+electromagnetic geophysical setups. It uses tetrahedral meshes and
+first-order finite-element approximations. In addition, adaptive mesh
+refinement approaches are implemented.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/EMmod-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">The electromagnetic response in a layered vertical transverse isotropic medium</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://github.com/emsig/EMmod"><span>github.com/emsig/EMmod</span></a></span></p>
+<p class="sd-card-text"><strong>EMmod</strong>, which stands for electromagnetic modeling, is an algorithm
+to model the full electromagnetic field in a vertical transverse
+isotropic (VTI) layered medium. Although the algorithm was designed for
+frequency-domain marine Controlled Source Electromagnetics (CSEM), it
+can also be used to simulate data for other geophysical exploration
+methods like for example Ground Penetrating Radar (GPR). The algorithm
+computes the EM-field analytically in the wavenumber-frequency domain
+and then carries out a numerical Hankel transformation to get the
+space-frequency domain representation.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/iEMmod-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Invert frequency-domain electromagnetic data</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://github.com/emsig/iEMmod"><span>github.com/emsig/iEMmod</span></a></span></p>
+<p class="sd-card-text">The software <strong>iEMmod</strong> is a non-linear conjugate-gradient algorithm to
+invert frequency-domain electromagnetic data for a layered-Earth model.
+The forward solver used is our open-source layered-Earth
+electromagnetic modeling code EMmod.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/3Dhom-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Seismoelectromagnetic homogeneous space Green’s functions</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://github.com/emsig/3Dhom"><span>github.com/emsig/3Dhom</span></a></span></p>
+<p class="sd-card-text"><strong>ElSeisHom3D</strong> stands for computing the Green’s functions of
+electromagnetic fields and elastic waves that are coupled in a
+homogeneous porous medium. The fields are the electric field, the
+magnetic field, the particle velocity, the filtration velocity, the
+acoustic pressure in the fluid, and bulk stress. The sources that
+generate these fields are the electric current source, the magnetic
+current source, the force source acting on the bulk, the force source
+acting on the fluid, the acoustic volume injection rate source acting
+on the fluid, and the deformation rate source acting on the bulk. The
+impulse responses that connect the fields to these sources are the
+Green’s functions.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/libdlf-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Library of Digital Linear Filters</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://github.com/emsig/libdlf"><span>github.com/emsig/libdlf</span></a></span></p>
+<p class="sd-card-text"><strong>libdlf</strong> is a library for digital linear filters. Codes until now had
+to hard-code their digital linear filters. This has several
+disadvantages. Having a common library that can be used by any code
+base in any language should hopefully widen the adoption of linear
+filters, make their use more reproducible, and might hopefully even
+spark the design of new, hopefully more robust filters or filters for
+new applications.</p>
+</div>
+<div class="sd-card-footer docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>libdlf
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>libdlf
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/pyfftlog-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">A python version of FFTLog</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://pyfftlog.readthedocs.io"><span>pyfftlog.readthedocs.io</span></a></span></p>
+<p class="sd-card-text"><strong>pyfftlog</strong> is a python version of the logarithmic FFT code FFTLog.
+FFTLog is a set of fortran subroutines that compute the fast Fourier or
+Hankel (= Fourier-Bessel) transform of a periodic sequence of
+logarithmically spaced points.</p>
+</div>
+<div class="sd-card-footer docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>pyfftlog
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>pyfftlog
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<img alt="" class="sd-card-img-top" src="_images/fftlog-logo.svg" />
+<div class="sd-card-header docutils">
+<p class="sd-card-text">A python wrapper for FFTLog</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-stretched-link reference external" href="https://github.com/emsig/fftlog"><span>github.com/emsig/fftlog</span></a></span></p>
+<p class="sd-card-text"><strong>fftlog</strong> is a simple f2py-wrapper for the logarithmic FFT code
+FFTLog. FFTLog is a set of fortran subroutines that compute the fast
+Fourier or Hankel (= Fourier-Bessel) transform of a periodic sequence
+of logarithmically spaced points.</p>
+</div>
+<div class="sd-card-footer docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>fftlog
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>fftlog
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<section id="contributing-contact">
+<h2><span class="fa fa-fas fa-users fa-2x"></span> Contributing &amp; Contact<a class="headerlink" href="#contributing-contact" title="Link to this heading">#</a></h2>
+<p><strong>emsig</strong> are community codes, please help to shape their future!</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="fa fa-code fa-2x"></span>
+<a class="reference external" href="https://github.com/emsig">Submit bugs, fix typos, contribute code, and so much more!</a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="fa fa-fa-regular fa-comments fa-2x"></span>
+Join the <strong>#emsig</strong>-channel on the <a class="reference external" href="https://softwareunderground.org/mattermost">SWUNG Chat</a>.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><span class="fa fa-fa-regular fa-envelope fa-2x"></span>
+If you prefer personal email you can contact me through
+my website <a class="reference external" href="https://werthmuller.org/contact/">werthmuller.org.</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<section id="related-ecosystem">
+<h3>Related ecosystem<a class="headerlink" href="#related-ecosystem" title="Link to this heading">#</a></h3>
+<p><strong>emsig</strong> and its codes are part of a bigger, fast growing, open-source <strong>EM &amp;
+Potential Geo-Exploration Python Ecosystem</strong> (make a PR or get in touch to add
+your library):</p>
+<p style="line-height:10em">
+
+<a href=https://pygimli.org><img src="https://www.pygimli.org/_static/gimli_logo.svg" style="max-height: 2cm;"></a>
+
+<a href=https://simpeg.xyz><img src="https://raw.github.com/simpeg/simpeg/master/docs/images/simpeg-logo.png" style="max-height: 2.5cm;"></a>
+
+<a style="margin:1em" href=https://petgem.bsc.es><img src="https://github.com/ocastilloreyes/petgem/raw/master/doc/source/_static/figures/petgem_logo.png" style="max-height: 3cm;"></a>
+
+<a href=https://custem.readthedocs.io><img src="https://custem.readthedocs.io/en/latest/_static/custEMlogo.png" style="max-height: 1.5cm;"></a>
+
+<a href=https://docs.pyvista.org><img src="https://docs.pyvista.org/_static/pyvista_logo.png" style="max-height: 2.5cm;"></a>
+
+<a style="margin:1em" href=https://www.fatiando.org><img src="https://raw.githubusercontent.com/fatiando/logo/main/logos/fatiando-logo-background.png" style="max-height: 3cm;"></a>
+
+<a href=https://www.gempy.org><img src="https://raw.github.com/cgre-aachen/gempy/master/docs/source/_static/logos/gempy.png" style="max-height: 2.5cm;"></a>
+
+<a style="margin:1em" href=https://github.com/softwareunderground/subsurface><img src="https://raw.github.com/softwareunderground/subsurface/main/docs/source/_static/logos/subsurface.png" style="max-height: 3cm;"></a>
+
+<a href=https://hkex.gitlab.io/resipy><img src="https://hkex.gitlab.io/resipy/_static/logo.png" style="max-height: 3cm;"></a>
+
+<a href=https://hkex.gitlab.io/emagpy><img src="https://hkex.gitlab.io/emagpy/_static/logo.png" style="max-height: 3cm;"></a>
+
+<a href=https://emsig.xyz><img src="https://emsig.xyz/_static/emsig-logo.svg" style="max-height: 2cm;"></a>
+
+<a href=https://mtpy-v2.readthedocs.io><img src="https://mtpy-v2.readthedocs.io/en/latest/_static/mtpy_logo_01.png" style="max-height: 2cm;"></a>
+
+</p><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">About the name and logo of emsig</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The name <strong>emsig</strong> is an abbreviation in English and a pun in German.</p>
+<p class="sd-card-text">It stands primarily as abbreviation for ElectroMagnetic Simulation in
+Geophysics. However, <strong>emsig</strong> is also a German adjective, meaning
+<em>hard-working</em> or <em>diligent</em>. Surely, our codes make our computers work
+hard!</p>
+<p class="sd-card-text">Finally, moving to the logo, the <strong>sig</strong>-ending can be seen as the short
+form of <strong>sigma</strong>, the symbol generally used for conductivity in
+geophysics, one of the elementary properties in electromagnetic modelling.
+The «s» in the logo of <strong>emsig</strong> is denoted by «ς», a variation of «σ»
+(sigma) in the Greek alphabet.</p>
+<p class="sd-card-text">The symbol itself represents the perpendicularity of electric and magnetic
+fields.</p>
+<img alt="_images/emsig-logo.svg" class="dark-light" src="_images/emsig-logo.svg" />
+</div>
+</details></section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2018-2025, The emsig community.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
