@@ -195,23 +195,43 @@ were part of publications.
         spark the design of new, hopefully more robust filters or filters for
         new applications.
 
+        ++++++
+
+        .. code:: bash
+
+            pip install libdlf
+
+        .. code:: bash
+
+            conda install -c conda-forge libdlf
+
     .. grid-item-card::
         :img-top: _static/pyfftlog-logo.svg
 
         A python version of FFTLog
         ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-        .. button-link:: https://github.com/emsig/pyfftlog
+        .. button-link:: https://pyfftlog.readthedocs.io
             :expand:
             :color: info
             :click-parent:
 
-            github.com/emsig/pyfftlog
+            pyfftlog.readthedocs.io
 
         **pyfftlog** is a python version of the logarithmic FFT code FFTLog.
         FFTLog is a set of fortran subroutines that compute the fast Fourier or
         Hankel (= Fourier-Bessel) transform of a periodic sequence of
         logarithmically spaced points.
+
+        ++++++
+
+        .. code:: bash
+
+            pip install pyfftlog
+
+        .. code:: bash
+
+            conda install -c conda-forge pyfftlog
 
     .. grid-item-card::
         :img-top: _static/fftlog-logo.svg
@@ -230,6 +250,16 @@ were part of publications.
         FFTLog. FFTLog is a set of fortran subroutines that compute the fast
         Fourier or Hankel (= Fourier-Bessel) transform of a periodic sequence
         of logarithmically spaced points.
+
+        ++++++
+
+        .. code:: bash
+
+            pip install fftlog
+
+        .. code:: bash
+
+            conda install -c conda-forge fftlog
 
 |
 |
