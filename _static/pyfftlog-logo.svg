@@ -22,7 +22,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:i="&amp;#38;#38;#38;#38;ns_ai;"><metadata
+   xmlns:ns1="&amp;#38;#38;#38;#38;#38;ns_ai;"><metadata
    id="metadata167"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
@@ -75,8 +75,8 @@
    fit-margin-right="20"
    fit-margin-bottom="20"
    inkscape:zoom="1.0057971"
-   inkscape:cx="229.17147"
-   inkscape:cy="268.94092"
+   inkscape:cx="230.16571"
+   inkscape:cy="270.9294"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
@@ -99,10 +99,10 @@
 	.st9{clip-path:url(#SVGID_16_);}
 </style>
 
-<i:aipgf
+<ns1:aipgf
    id="adobe_illustrator_pgf"
-   i:pgfEncoding="zstd/base64"
-   i:pgfVersion="24">
+   ns1:pgfEncoding="zstd/base64"
+   ns1:pgfVersion="24">
 	<![CDATA[
 	KLUv/QBYpJ8ErghGqQwqwNYQCgZUBSvrBumwBnUt8dRDT6z/936cF3aSFpGS4GdEAtgkCAIM0+R4
 FBBlC5oLSShnsr+v+iGe1ORqWFZJbWSVzuroV340DO3ENgxvsnrSK+MsErRBQ1dV91FKmQa1Lmij
@@ -3919,7 +3919,7 @@ seJN3CBEwtfwF7QQXSmVCwaWh4EnWNJvFNlB1QdnjjbQB+jIKciPeCIWJYzD34plXHMVxCBRhn9g
 JNNs1yZqOedWW6ojYiWGoTNj0ykignDNZzcidzXXk8OO34sxh0XwyUmTDV2aiBZmf4MKYM9eSJ/v
 9wQyq773+xMFCJ88SuzCw9LlZ09rJspdQXxHFijVCYwB
 	]]>
-</i:aipgf>
+</ns1:aipgf>
 <text
    xml:space="preserve"
    style="font-size:96px;letter-spacing:6px;fill:#226bff;fill-opacity:1"
@@ -3930,4 +3930,4 @@ JNNs1yZqOedWW6ojYiWGoTNj0ykignDNZzcidzXXk8OO34sxh0XwyUmTDV2aiBZmf4MKYM9eSJ/v
      id="tspan274"
      x="148.31223"
      y="88.223999"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#226bff;fill-opacity:1">pyfftlog</tspan></text></svg>
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#447fc1;fill-opacity:1">pyfftlog</tspan></text></svg>
