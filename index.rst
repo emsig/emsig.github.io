@@ -15,18 +15,18 @@ ElectroMagnetic Simulation in Geophysics
 
 **emsig** are open-source codes to simulate electromagnetic data. Their main
 targets are geophysical applications (exploration and monitoring, engineering,
-environmental), but they are by no means limited to that. The codes with
-extensive documentation are listed on this page. The `emsig GitHub org
-<https://github.com/emsig/>`_ contains besides the main codes also related
-publications for reproducibility purposes and other associated things of
-interest, such as smaller codes which were part of publications.
+environmental), but they are by no means limited to that. The main codes are
+listed on this page. The `emsig GitHub org <https://github.com/emsig/>`_
+contains besides the main codes also related publications for reproducibility
+purposes and other associated things of interest, such as smaller codes which
+were part of publications.
 
 
 |
 |
 |
 
-.. grid:: 1 2 2 2
+.. grid:: 1 1 2 2
     :gutter: 2
 
     .. grid-item-card::
@@ -89,6 +89,112 @@ interest, such as smaller codes which were part of publications.
 
             conda install -c conda-forge emg3d
 
+    .. grid-item-card::
+        :img-top: _static/libdlf-logo.svg
+
+        Library of Digital Linear Filters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/libdlf
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/libdlf
+
+        **libdlf** is a library for digital linear filters. Codes until now had
+        to hard-code their digital linear filters. This has several
+        disadvantages. Having a common library that can be used by any code
+        base in any language should hopefully widen the adoption of linear
+        filters, make their use more reproducible, and might hopefully even
+        spark the design of new, hopefully more robust filters or filters for
+        new applications.
+
+    .. grid-item-card::
+        :img-top: _static/elfe3D-logo.svg
+
+        Modelling with the total electric field approach using finite elements in 3D
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/elfe3D
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/elfe3D
+
+        **elfe3D** is a 3D forward modelling code that can simulate electric
+        and magnetic field responses from frequency-domain controlled-source
+        electromagnetic geophysical setups. It uses tetrahedral meshes and
+        first-order finite-element approximations. In addition, adaptive mesh
+        refinement approaches are implemented.
+
+    .. grid-item-card::
+        :img-top: _static/EMmod-logo.svg
+
+        The electromagnetic response in a layered vertical transverse isotropic medium
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/EMmod
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/EMmod
+
+        **EMmod**, which stands for electromagnetic modeling, is an algorithm
+        to model the full electromagnetic field in a vertical transverse
+        isotropic (VTI) layered medium. Although the algorithm was designed for
+        frequency-domain marine Controlled Source Electromagnetics (CSEM), it
+        can also be used to simulate data for other geophysical exploration
+        methods like for example Ground Penetrating Radar (GPR). The algorithm
+        computes the EM-field analytically in the wavenumber-frequency domain
+        and then carries out a numerical Hankel transformation to get the
+        space-frequency domain representation.
+
+    .. grid-item-card::
+        :img-top: _static/iEMmod-logo.svg
+
+        Invert frequency-domain electromagnetic data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/iEMmod
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/iEMmod
+
+        The software **iEMmod** is a non-linear conjugate-gradient algorithm to
+        invert frequency-domain electromagnetic data for a layered-Earth model.
+        The forward solver used is our open-source layered-Earth
+        electromagnetic modeling code EMmod.
+
+    .. grid-item-card::
+        :img-top: _static/3Dhom-logo.svg
+
+        Seismoelectromagnetic homogeneous space Green's functions
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/3Dhom
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/3Dhom
+
+        **ElSeisHom3D** stands for computing the Green's functions of
+        electromagnetic fields and elastic waves that are coupled in a
+        homogeneous porous medium. The fields are the electric field, the
+        magnetic field, the particle velocity, the filtration velocity, the
+        acoustic pressure in the fluid, and bulk stress. The sources that
+        generate these fields are the electric current source, the magnetic
+        current source, the force source acting on the bulk, the force source
+        acting on the fluid, the acoustic volume injection rate source acting
+        on the fluid, and the deformation rate source acting on the bulk. The
+        impulse responses that connect the fields to these sources are the
+        Green's functions.
+
 |
 |
 |
@@ -127,7 +233,8 @@ Related ecosystem
 =================
 
 **emsig** and its codes are part of a bigger, fast growing, open-source **EM &
-Potential Geo-Exploration Python Ecosystem**:
+Potential Geo-Exploration Python Ecosystem** (make a PR or get in touch to add
+your library):
 
 .. raw:: html
 
@@ -137,17 +244,17 @@ Potential Geo-Exploration Python Ecosystem**:
 
    <a href=https://simpeg.xyz><img src="https://raw.github.com/simpeg/simpeg/master/docs/images/simpeg-logo.png" style="max-height: 2.5cm;"></a>
 
-   <a style="margin:1em" href=https://petgem.bsc.es><img src="https://petgem.bsc.es/_static/figures/petgem_logo.png" style="max-height: 3cm;"></a>
+   <a style="margin:1em" href=https://petgem.bsc.es><img src="https://github.com/ocastilloreyes/petgem/raw/master/doc/source/_static/figures/petgem_logo.png" style="max-height: 3cm;"></a>
 
-   <a href=https://gitlab.com/Rochlitz.R/custEM><img src="https://custem.readthedocs.io/en/latest/_static/custEMlogo.png" style="max-height: 1.5cm;"></a>
+   <a href=https://custem.readthedocs.io><img src="https://custem.readthedocs.io/en/latest/_static/custEMlogo.png" style="max-height: 1.5cm;"></a>
 
-   <a href=https://docs.pyvista.org><img src="https://raw.githubusercontent.com/pyvista/pyvista/main/doc/source/_static/pyvista_logo_sm.png" style="max-height: 2.5cm;"></a>
+   <a href=https://docs.pyvista.org><img src="https://docs.pyvista.org/_static/pyvista_logo.png" style="max-height: 2.5cm;"></a>
 
    <a style="margin:1em" href=https://www.fatiando.org><img src="https://raw.githubusercontent.com/fatiando/logo/main/logos/fatiando-logo-background.png" style="max-height: 3cm;"></a>
 
    <a href=https://www.gempy.org><img src="https://raw.github.com/cgre-aachen/gempy/master/docs/source/_static/logos/gempy.png" style="max-height: 2.5cm;"></a>
 
-   <a style="margin:1em" href=https://softwareunderground.github.io/subsurface/><img src="https://raw.github.com/softwareunderground/subsurface/main/docs/source/_static/logos/subsurface.png" style="max-height: 3cm;"></a>
+   <a style="margin:1em" href=https://github.com/softwareunderground/subsurface><img src="https://raw.github.com/softwareunderground/subsurface/main/docs/source/_static/logos/subsurface.png" style="max-height: 3cm;"></a>
 
    <a href=https://hkex.gitlab.io/resipy><img src="https://hkex.gitlab.io/resipy/_static/logo.png" style="max-height: 3cm;"></a>
 
@@ -155,7 +262,7 @@ Potential Geo-Exploration Python Ecosystem**:
 
    <a href=https://emsig.xyz><img src="https://emsig.xyz/_static/emsig-logo.svg" style="max-height: 2cm;"></a>
 
-   <a href=https://mtpy2.readthedocs.io"><big>&nbsp;&nbsp;MTpy&nbsp;&nbsp;</big></a>
+   <a href=https://mtpy-v2.readthedocs.io><img src="https://mtpy-v2.readthedocs.io/en/latest/_static/mtpy_logo_01.png" style="max-height: 2cm;"></a>
 
    </p>
 
