@@ -90,27 +90,6 @@ were part of publications.
             conda install -c conda-forge emg3d
 
     .. grid-item-card::
-        :img-top: _static/libdlf-logo.svg
-
-        Library of Digital Linear Filters
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-        .. button-link:: https://github.com/emsig/libdlf
-            :expand:
-            :color: info
-            :click-parent:
-
-            github.com/emsig/libdlf
-
-        **libdlf** is a library for digital linear filters. Codes until now had
-        to hard-code their digital linear filters. This has several
-        disadvantages. Having a common library that can be used by any code
-        base in any language should hopefully widen the adoption of linear
-        filters, make their use more reproducible, and might hopefully even
-        spark the design of new, hopefully more robust filters or filters for
-        new applications.
-
-    .. grid-item-card::
         :img-top: _static/elfe3D-logo.svg
 
         Modelling with the total electric field approach using finite elements in 3D
@@ -194,6 +173,63 @@ were part of publications.
         on the fluid, and the deformation rate source acting on the bulk. The
         impulse responses that connect the fields to these sources are the
         Green's functions.
+
+    .. grid-item-card::
+        :img-top: _static/libdlf-logo.svg
+
+        Library of Digital Linear Filters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/libdlf
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/libdlf
+
+        **libdlf** is a library for digital linear filters. Codes until now had
+        to hard-code their digital linear filters. This has several
+        disadvantages. Having a common library that can be used by any code
+        base in any language should hopefully widen the adoption of linear
+        filters, make their use more reproducible, and might hopefully even
+        spark the design of new, hopefully more robust filters or filters for
+        new applications.
+
+    .. grid-item-card::
+        :img-top: _static/pyfftlog-logo.svg
+
+        A python version of FFTLog
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/pyfftlog
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/pyfftlog
+
+        **pyfftlog** is a python version of the logarithmic FFT code FFTLog.
+        FFTLog is a set of fortran subroutines that compute the fast Fourier or
+        Hankel (= Fourier-Bessel) transform of a periodic sequence of
+        logarithmically spaced points.
+
+    .. grid-item-card::
+        :img-top: _static/fftlog-logo.svg
+
+        A python wrapper for FFTLog
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/fftlog
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/fftlog
+
+        **fftlog** is a simple f2py-wrapper for the logarithmic FFT code
+        FFTLog. FFTLog is a set of fortran subroutines that compute the fast
+        Fourier or Hankel (= Fourier-Bessel) transform of a periodic sequence
+        of logarithmically spaced points.
 
 |
 |

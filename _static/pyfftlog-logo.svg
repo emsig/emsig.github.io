@@ -8,7 +8,7 @@
    y="0px"
    viewBox="0 0 710.04824 120"
    xml:space="preserve"
-   sodipodi:docname="libdlf-logo.svg"
+   sodipodi:docname="pyfftlog-logo.svg"
    inkscape:export-filename="/home/dtr/Desktop/emg3d-logo.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -76,7 +76,7 @@
    fit-margin-bottom="20"
    inkscape:zoom="1.0057971"
    inkscape:cx="229.17147"
-   inkscape:cy="267.94669"
+   inkscape:cy="268.94092"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
@@ -3923,11 +3923,11 @@ JNNs1yZqOedWW6ojYiWGoTNj0ykignDNZzcidzXXk8OO34sxh0XwyUmTDV2aiBZmf4MKYM9eSJ/v
 <text
    xml:space="preserve"
    style="font-size:96px;letter-spacing:6px;fill:#226bff;fill-opacity:1"
-   x="216.52008"
-   y="96.624001"
+   x="148.31223"
+   y="88.223999"
    id="text276"><tspan
      sodipodi:role="line"
      id="tspan274"
-     x="216.52008"
-     y="96.624001"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#226bff;fill-opacity:1">libdlf</tspan></text></svg>
+     x="148.31223"
+     y="88.223999"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#226bff;fill-opacity:1">pyfftlog</tspan></text></svg>
