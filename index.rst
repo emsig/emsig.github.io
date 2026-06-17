@@ -109,6 +109,23 @@ were part of publications.
         refinement approaches are implemented.
 
     .. grid-item-card::
+        :img-top: _static/elfe3D_GPR-logo.svg
+
+        Frequency-domain FEM Ground-Penetrating Radar Simulation Code in 3D
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        .. button-link:: https://github.com/emsig/elfe3D_GPR
+            :expand:
+            :color: info
+            :click-parent:
+
+            github.com/emsig/elfe3D_GPR
+
+        **elfe3D_GPR** is a 3D edge-based Finite Element (FE) software for
+        Ground Penetrating Radar (GPR) geophysical heterogeneous models in the
+        frequency domain.
+
+    .. grid-item-card::
         :img-top: _static/EMmod-logo.svg
 
         The electromagnetic response in a layered vertical transverse isotropic medium
